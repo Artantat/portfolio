@@ -1,0 +1,25 @@
+.navBar {
+  display: inline-flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  fort-size:1.5rem;
+
+}
+
+.navBarItem {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  border-radius: 5px;
+  border-width:1px;
+  border-style: dashed;
+  border-color: white;
+  font-weight: bold;
+  color: light-blue;
+  cursor: pointer;
+}
+
+.navBarItem:hover {
+  background: linear-gradient(to top, rgba(100,100,100,1) 0%, rgba(100,100,100,0) 30%);
+}

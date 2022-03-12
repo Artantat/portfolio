@@ -1,19 +1,5 @@
-body {
-  /* font-size:1.5em; */
-  background: linear-gradient(170deg, #95adbe, #e0f0ea,#95adbe);
-  font-family: Ariel;
-  /* display:inline-flex;
-  flex-wrap: wrap; */
-
-  /* height: 100%; */
-  /* display:flex; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
-  /* border-style:groove; */
-  /* display:grid; */
-  /* grid-column-template: 1fr 2fr; */
-}
+@import 'main.css';
+@import '../components/NavBar.css';
 
 .projectPanel {
 
@@ -142,7 +128,7 @@ body {
 
   margin:2px;
 }
-.gameTag:hover {
+.gameTag:hover, .skillTag:hover {
   /* background-color: white; */
   background: linear-gradient(180deg,#574f7d,5%,#95adbe);
 }

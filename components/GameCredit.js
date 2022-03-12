@@ -6,7 +6,7 @@ const Component = require('./Component');
 class GameCredit extends Component{
   constructor(imgsrc='default.jpg', title='Game Credit', skillTags=['art', 'banana','apple','squiggle','orange','zippy']){
     super('div');
-    
+
     this.component.classList.add('gameCreditContainer');
     let innerComponents = '';
     innerComponents += new GameBoxImg(imgsrc, `${title} image`).getHTML();
