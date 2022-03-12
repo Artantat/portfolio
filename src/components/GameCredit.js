@@ -4,7 +4,7 @@ const GameBoxImg = require('./GameBoxImg');
 const Component = require('./Component');
 
 class GameCredit extends Component{
-  constructor(imgsrc='default.jpg', title='Game Credit', skillTags=['art', 'banana','apple','squiggle','orange','zippy']){
+  constructor(imgsrc='./src/assets/gameboxes/default.jpg', title='Game Credit', skillTags=['art', 'banana','apple','squiggle','orange','zippy']){
     super('div');
 
     this.component.classList.add('gameCreditContainer');
