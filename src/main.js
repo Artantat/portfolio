@@ -2,11 +2,14 @@ const GameCredit = require('./components/GameProject/GameCredit');
 const ProjectPanel = require('./components/ProjectPanel/ProjectPanel');
 const NavBar = require('./components/Navigation/NavBar');
 const gamecredits = require('./data/data_gamecredits');
+const About = require('./components/About/About');
 
 const root = document.getElementById('Root');
 const nav = new NavBar(['About','Games','Personal Projects','Contact']);
+const about = new About();
 // console.log(nav);
 root.appendChild(nav.component);
+root.appendChild(about.component);
 
 var gamecred1 = new GameCredit('./src/assets/gameboxes/default.jpg','Test Game Credit', ['art', 'vfx','destruction','console','shaderFX','houdini']);
 var gamecred2 = GameCredit.fromJSON(gamecred1.toJSON());
