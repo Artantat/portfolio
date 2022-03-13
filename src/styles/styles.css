@@ -1,5 +1,5 @@
 @import 'main.css';
-@import '../components/NavBar.css';
+@import '../components/Navigation/NavBar.css';
 
 .projectPanel {
 

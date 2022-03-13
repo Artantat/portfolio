@@ -1,5 +1,5 @@
 const GameCredit = require('./GameCredit');
-const Component = require('./Component');
+const Component = require('../Component');
 
 class GameCreditBox extends Component{
   constructor(gameCredits=[]){

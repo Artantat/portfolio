@@ -1,7 +1,7 @@
-const SkillTagBox = require('./SkillTagBox');
+const SkillTagBox = require('../SkillTag/SkillTagBox');
 const GameTitle = require('./GameTitle');
 const GameBoxImg = require('./GameBoxImg');
-const Component = require('./Component');
+const Component = require('../Component');
 
 class GameCredit extends Component{
   constructor(imgsrc='./src/assets/gameboxes/default.jpg', title='Game Credit', skillTags=['art', 'banana','apple','squiggle','orange','zippy']){

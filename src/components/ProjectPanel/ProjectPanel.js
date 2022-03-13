@@ -1,6 +1,6 @@
-const Component = require('./Component');
+const Component = require('../Component');
 const ProjectTitle = require('./ProjectTitle');
-const GameCreditBox = require('./GameCreditBox');
+const GameCreditBox = require('../GameProject/GameCreditBox');
 
 class ProjectPanel extends Component{
   constructor(title='Projects', gameCredits=[]){

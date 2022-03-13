@@ -1,6 +1,6 @@
-const GameCredit = require('./components/GameCredit');
-const ProjectPanel = require('./components/ProjectPanel');
-const NavBar = require('./components/NavBar');
+const GameCredit = require('./components/GameProject/GameCredit');
+const ProjectPanel = require('./components/ProjectPanel/ProjectPanel');
+const NavBar = require('./components/Navigation/NavBar');
 const gamecredits = require('./data/data_gamecredits');
 
 const root = document.getElementById('Root');

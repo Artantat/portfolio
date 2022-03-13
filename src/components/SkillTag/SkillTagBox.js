@@ -1,5 +1,5 @@
 const SkillTag = require('./SkillTag');
-const Component = require('./Component');
+const Component = require('../Component');
 
 class SkillTagBox extends Component{
   constructor(skillTags=[]){

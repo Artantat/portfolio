@@ -1,4 +1,4 @@
-const Component = require('./Component');
+const Component = require('../Component');
 const NavBarItem = require('./NavBarItem');
 
 class NavBar extends Component{
