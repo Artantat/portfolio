@@ -35,21 +35,16 @@ const studios = [
 class About extends Component{
   constructor(pic='./src/assets/profile/profile.png', name='Artantat', header='Healine', description='Something About me'){
     super('div');
-    // this.component.classList.add('about');
+    this.component.classList.add('about');
+    this.component.id = 'about';
     this.component.innerHTML = (`
-      <div class='about' id='about'>
-        <div class='aboutTitle'>
-          <img src="${pic}" alt="Picture" class="profilePic"/>
-          <div class='aboutName'>${name}</div>
-        </div>
-        <div class='description'>
-          <p>
-            Hi! Thanks for dropping by! I've been a Game Developer for ${new Date(new Date() - new Date(2006, 8, 1))} working at ${studios.length} studios. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
-          </p>
-          <p>
-            When I'm not working on making games, I spend most of my time learning new skills through a variety of resources such as Udemy, Linkedin Learn and tranditional classes. check out my learning section for resources i've found useful as well as tutorials and resources I've created.
-          </p>
-        </div>
+      <div class='description'>
+        <p>
+          Hi! Thanks for dropping by! I've been a Game Developer for ${new Date(new Date() - new Date(2006, 8, 1))} working at ${studios.length} studios. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
+        </p>
+        <p>
+          When I'm not working on making games, I spend most of my time learning new skills through a variety of resources such as Udemy, Linkedin Learn and tranditional classes. check out my learning section for resources i've found useful as well as tutorials and resources I've created.
+        </p>
       </div>
     `);
 

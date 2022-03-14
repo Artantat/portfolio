@@ -5,25 +5,27 @@
 
 .aboutTitle{
   display: inline-flex;
+  align-items: flex-end;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: black;
+  width: 100%;
 }
 
 .aboutName{
-  justify-content: flex-start;
-  /* align-self:flex-end; */
-  align-content: flex-end;
-  /* margin:0; */
-  /* align-items:flex-end; */
 
-
-  /* margin:0; */
   font-size: 3rem;
+  padding-right: 20px;
+  width: 100%;
+  text-align: right;
+
 }
 
 .description {
   color:blue;
 }
 
-.profilePic{
+/* .profilePic{
   border-radius: 50%;
   width:150px;
   height:150px;
@@ -31,4 +33,5 @@
   border-width: 3px;
   border-color: black;
   margin-right: 50px;
-}
+  margin-bottom: 10px;
+} */

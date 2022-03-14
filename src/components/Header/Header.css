@@ -1,0 +1,36 @@
+.header{
+
+  padding-bottom: 20px;
+  /* margin-bottom: 30px; */
+  background: linear-gradient(1deg, rgba(255,255,255,0) 12%, rgba(128,128,128,1) 15%,rgba(255,255,255,1) 15.5%);
+  /* box-shadow: 2px 5px 5px lightgrey; */
+}
+
+.banner{
+  display: inline-flex;
+  align-items: flex-end;
+  /* justify-content: flex-end; */
+  /* border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: black; */
+  width: 100%;
+}
+
+.headerName{
+  font-size: 3rem;
+  padding-right: 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.profilePic{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  margin-right: 50px;
+  /* justify-content: flex-end; */
+  /* margin-bottom: 10px; */
+}

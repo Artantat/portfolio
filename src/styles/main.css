@@ -1,7 +1,8 @@
 body {
   /* font-size:1.5em; */
-  background: linear-gradient(170deg, #95adbe, #e0f0ea,#95adbe);
+  /* background: linear-gradient(170deg, #95adbe, #e0f0ea,#95adbe); */
   font-family: Ariel;
+  background-color: white;
   /* display:inline-flex;
   flex-wrap: wrap; */
 
@@ -13,4 +14,8 @@ body {
   /* border-style:groove; */
   /* display:grid; */
   /* grid-column-template: 1fr 2fr; */
+}
+
+.main{
+  background: linear-gradient(170deg, #95adbe, #e0f0ea,#95adbe);
 }

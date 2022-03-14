@@ -1,4 +1,5 @@
 const About = require('./About/About');
+const Header = require('./Header/Header');
 const NavBar = require('./Navigation/NavBar');
 const ProjectPanel = require('./ProjectPanel/ProjectPanel');
 const Footer = require('./Footer/Footer');
@@ -18,7 +19,9 @@ class App{
   route(){
     const root = document.getElementById('Root');
     root.innerHTML = '';
-    root.appendChild(new NavBar(['About','Games','Personal Projects','Contact']).component);
+    root.classList.add('main');
+    root.appendChild(new Header().component);
+    // root.appendChild(new NavBar(['About','Games','Personal Projects','Contact']).component);
     switch (this.state.url) {
       case 'about':
         root.appendChild(new About().component);
