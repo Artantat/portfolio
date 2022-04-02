@@ -7,7 +7,7 @@ class GameCreditBox extends Component{
     this.component.classList.add('gameCreditBox');
     let html = '';
     for (let gameCredit of gameCredits){
-      html += gameCredit.getHTML();
+      html += new GameCredit(gameCredit.imgsrc, gameCredit.title,  gameCredit.skillTags).getHTML();
     }
     this.component.innerHTML = html;
   }

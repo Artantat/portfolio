@@ -40,7 +40,10 @@ class About extends Component{
     this.component.innerHTML = (`
       <div class='description'>
         <p>
-          Hi! Thanks for dropping by! I've been a Game Developer for ${new Date(new Date() - new Date(2006, 8, 1))} working at ${studios.length} studios. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
+          Hi! Thanks for dropping by!
+        </p>
+        <p>
+          I've been a Game Developer for ${new Date(new Date() - new Date(2006, 8, 1))} working at ${studios.length} studios. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
         </p>
         <p>
           When I'm not working on making games, I spend most of my time learning new skills through a variety of resources such as Udemy, Linkedin Learn and tranditional classes. check out my learning section for resources i've found useful as well as tutorials and resources I've created.

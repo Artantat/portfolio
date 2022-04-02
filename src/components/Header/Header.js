@@ -2,7 +2,7 @@ const Component = require('../Component');
 const NavBar = require('../Navigation/NavBar');
 
 class Header extends Component {
-  constructor(pic='./src/assets/profile/profile.png', name='Artantat' ){
+  constructor(pic, name, navbar ){
     super('div');
     this.component.classList.add('header');
     this.component.id = 'header';
@@ -12,7 +12,7 @@ class Header extends Component {
         <div class='headerName'>${name}</div>
       </div>
     `);
-    this.component.appendChild(new NavBar(['About','Games','Personal Projects','Contact']).component);
+    this.component.appendChild(navbar.component);
   }
 }
 

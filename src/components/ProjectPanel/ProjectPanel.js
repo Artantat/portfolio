@@ -6,11 +6,16 @@ class ProjectPanel extends Component{
   constructor(title='Projects', gameCredits=[]){
     super('div');
     this.component.classList.add('projectPanel');
-    let html = `
-      ${new ProjectTitle(title).getHTML()}
-      ${new GameCreditBox(gameCredits).getHTML()}
-    `;
-    this.component.innerHTML = html;
+    fetch('http://localhost:3002/projectsgames')
+      .then(response => response.json())
+      .then(games =>{
+        let html = `
+          ${new ProjectTitle(title).getHTML()}
+          ${new GameCreditBox(games).getHTML()}
+        `;
+        this.component.innerHTML = html;
+      });
+
   }
 }
 

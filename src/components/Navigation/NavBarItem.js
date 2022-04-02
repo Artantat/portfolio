@@ -5,7 +5,8 @@ class NavBarItem extends Component {
     super('div');
     this.component.classList.add('navBarItem');
     this.component.innerText = title;
-    this.component.addEventListener('click', callback);
+    this.component.addEventListener('click', callback());
+
   }
 }
 
