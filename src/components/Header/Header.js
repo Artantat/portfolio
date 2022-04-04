@@ -8,7 +8,7 @@ class Header extends Component {
     this.component.id = 'header';
     this.component.innerHTML = (`
       <div class="banner">
-        <img src="${pic}" alt="Picture" class="profilePic"/>
+        
         <div class='headerName'>${name}</div>
       </div>
     `);

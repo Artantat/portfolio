@@ -4,6 +4,37 @@
   /* justify-content: flex-end; */
 }
 
+.projectCollectionHeader {
+  text-align: center;
+  hyphens: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.projectCollectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.projectCollectionDescription {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-top-width:2px;
+  border-bottom-width: 2px;
+  border-bottom-color: rgb(180,180,180);
+  border-top-color: rgb(180,180,180);
+  background: linear-gradient(to right, rgba(255,255,255,0), 15%, rgba(255,255,255,0.65), 85% , rgba(255,255,255,0));
+}
+
 .projectTitle {
   font-size: 2.5rem;
   text-align: right;

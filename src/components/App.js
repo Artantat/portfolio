@@ -63,10 +63,10 @@ class App{
         root.appendChild(new About().component);
         break;
       case '/games':
-        root.appendChild(new ProjectPanel('Games').component);
+        root.appendChild(new ProjectPanel('Games',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
         break;
       case '/webapps':
-        root.appendChild(new ProjectPanel('Web Apps').component);
+        root.appendChild(new ProjectPanel('Web Apps',`Here you can find a collection of WebApps that I've created`).component);
         break;
       default:
         root.appendChild(new About().component);

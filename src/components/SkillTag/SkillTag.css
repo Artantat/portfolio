@@ -1,0 +1,43 @@
+.tagbox, .skillTagBox {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-shrink: 50%; */
+  align-content:flex-start;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 5px;
+  /* margin-top: 10px; */
+  width: 100%;
+  filter: drop-shadow(3px 3px 2px rgb(128,128,128));
+  /* border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: linear-gradient(0deg,#4E8F82,5%,#8EBAB1 ); */
+
+  /* vertical-align: bottom; */
+  /* float:left; */
+  /* background: linear-gradient(to bottom, #95adbe, 5%, white); */
+  /* max-height: 50%; */
+  background-color: #FFE9C3;
+  /* background: linear-gradient(30deg, blue, green); */
+}
+
+.gameTag, .skillTag{
+  padding-left: 10px;
+  padding-right: 10px;
+  /* background-color: #574f7d; */
+  background: linear-gradient(0deg,#4E8F82,5%,#8EBAB1);
+  border-radius: 4px;
+  border: 1px;
+  border-style: groove;
+  border-color: #95adbe;
+  /* border-width: medium; */
+  /* width: minmax(100px, 100px); */
+  /* width: 20%; */
+  /* height: 20%; */
+
+  margin:2px;
+}
+.gameTag:hover, .skillTag:hover {
+  /* background-color: white; */
+  background: linear-gradient(180deg,#574f7d,5%,#95adbe);
+}

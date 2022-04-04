@@ -39,6 +39,7 @@ class About extends Component{
     this.component.id = 'about';
     this.component.innerHTML = (`
       <div class='description'>
+      <img src="${pic}" alt="Picture" class="profilePic"/>
         <p>
           Hi! Thanks for dropping by!
         </p>

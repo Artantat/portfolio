@@ -1,15 +1,15 @@
-const SkillTag = require('./SkillTag');
+// const SkillTag = require('./SkillTag');
 const Component = require('../Component');
 
 class SkillTagBox extends Component{
   constructor(skillTags=[]){
     super('div');
     this.component.classList.add('skillTagBox');
-    let skills = '';
+    let html = '';
     for (let skilltag of skillTags){
-      skills += (new SkillTag(skilltag)).getHTML();
+      html += `<div class="skillTag">${skilltag}</div>`;
     }
-    this.component.innerHTML = skills;
+    this.component.innerHTML = html;
   }
 }
 

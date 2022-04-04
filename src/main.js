@@ -1,8 +1,8 @@
-const GameCredit = require('./components/GameProject/GameCredit');
-const ProjectPanel = require('./components/ProjectPanel/ProjectPanel');
-const NavBar = require('./components/Navigation/NavBar');
-const gamecredits = require('./data/data_gamecredits');
-const About = require('./components/About/About');
+// const GameCredit = require('./components/GameProject/GameCredit');
+// const ProjectPanel = require('./components/ProjectPanel/ProjectPanel');
+// const NavBar = require('./components/Navigation/NavBar');
+// const gamecredits = require('./data/data_gamecredits');
+// const About = require('./components/About/About');
 const App = require('./components/App');
 
 const app = new App();
