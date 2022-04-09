@@ -7,7 +7,7 @@ const studios = [
     name: 'Edge of Reality',
     location: 'Austin, TX',
     logo: 'eor_logo.jpg',
-    yearsofservice: '1 year 6 months',
+    yearsofservice: '1 year 7 months',
     position: 'Environment Artist (Contract)',
     shippedTitles: ['Incredible Hulk'],
     description: ('This was my first Game job right out of college. It was a great learning experience and I had a lot of fun working on "The Incredible Hulk" that came out with the Ed Norton movie. I worked on city props, destruction assets and storefronts mostly')
@@ -37,6 +37,14 @@ class About extends Component{
     super('div');
     this.component.classList.add('about');
     this.component.id = 'about';
+
+    const expTimeSeconds = ((new Date() - new Date(2007, 2, 1))/1000);
+    const expTimeMinutes = expTimeSeconds / 60;
+    const expTimeHours = expTimeMinutes / 60;
+    const expTimeDays = expTimeHours / 24;
+    const expTimeYears = Math.floor(expTimeDays / 365);
+    const expTimeMonths = Math.floor((expTimeDays % 365) / 30);
+
     this.component.innerHTML = (`
       <div class='description'>
       <img src="${pic}" alt="Picture" class="profilePic"/>
@@ -44,7 +52,7 @@ class About extends Component{
           Hi! Thanks for dropping by!
         </p>
         <p>
-          I've been a Game Developer for ${new Date(new Date() - new Date(2006, 8, 1))} working at ${studios.length} studios. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
+          I've been a Game Developer for ${expTimeYears}y ${expTimeMonths}m ${Math.floor(expTimeDays % 30)}d working at ${studios.length} studios in that time. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
         </p>
         <p>
           When I'm not working on making games, I spend most of my time learning new skills through a variety of resources such as Udemy, Linkedin Learn and tranditional classes. check out my learning section for resources i've found useful as well as tutorials and resources I've created.

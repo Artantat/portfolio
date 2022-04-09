@@ -1,0 +1,15 @@
+.contactContainer {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  width:50%;
+  height:400px;
+}
+
+.contactForm {
+
+}
+
+.contactSubmit{
+  background-color: blue;
+}

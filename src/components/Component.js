@@ -1,5 +1,5 @@
 class Component{
-  constructor(elementType){
+  constructor(elementType='div'){
     this.component = document.createElement(elementType);
   }
 

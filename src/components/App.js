@@ -3,6 +3,8 @@ const Header = require('./Header/Header');
 const NavBar = require('./Navigation/NavBar');
 const ProjectPanel = require('./ProjectPanel/ProjectPanel');
 const Footer = require('./Footer/Footer');
+const DemoReel = require('./DemoReel/DemoReel');
+const Contact = require('./Contact/Contact');
 
 class App{
   constructor(){
@@ -63,10 +65,16 @@ class App{
         root.appendChild(new About().component);
         break;
       case '/games':
-        root.appendChild(new ProjectPanel('Games',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
+        root.appendChild(new ProjectPanel('GAMES',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
         break;
       case '/webapps':
         root.appendChild(new ProjectPanel('Web Apps',`Here you can find a collection of WebApps that I've created`).component);
+        break;
+      case '/demoreel':
+        root.appendChild(new DemoReel().component);
+        break;
+      case '/contact':
+        root.appendChild(new Contact().component);
         break;
       default:
         root.appendChild(new About().component);

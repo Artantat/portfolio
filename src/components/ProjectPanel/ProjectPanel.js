@@ -20,7 +20,7 @@ class ProjectPanel extends Component{
           </div>
         `);
         for (let project of projects){
-          html += new GameProject(project.imgsrc, project.title,  project.skillTags).getHTML();
+          html += new GameProject(project.imgsrc, project.title,  project.skillTags, project.description).getHTML();
         }
         this.component.innerHTML = html;
       });
