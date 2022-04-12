@@ -1,15 +1,84 @@
 .contactContainer {
-  display:flex;
+  display:grid;
   justify-content: center;
   align-content: center;
-  width:50%;
-  height:400px;
+  width:100%;
+  height:300px;
 }
 
 .contactForm {
-
+  display:grid;
+  /* width:60%; */
+  /* align-content: center; */
+  justify-content: center;
+  /* height: 160px; */
 }
 
 .contactSubmit{
-  background-color: blue;
+  /* justify-content: center; */
+  width:50%;
+  margin:auto;
 }
+
+.contactThanks{
+  margin:auto;
+  width:50%;
+  font-size:1.25rem;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.15);
+  border-width: 1px;
+  background-color: white;
+  padding: 30px;
+  min-width: 100px;
+  min-height: 100px;
+  filter: drop-shadow(2px 2px 1px rgba(0,0,0,0.3));
+  /* text-align: center; */
+}
+.contactSubmit:hover{
+
+}
+
+.contactLabels{
+  text-align: center;
+  /* justify-content: center; */
+  /* width: 100%; */
+}
+
+.contactInput{
+  /* margin-bottom: 15px; */
+}
+
+.contactDropdown{
+  /* position:relative; */
+  /* width:80%; */
+}
+
+/* .contactDropdown::after{
+  position: absolute;
+  content: ">";
+  color:black;
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  z-index: 1;
+  border-color: rgba(0,0,0,1);
+} */
+
+/* .wrappper{
+  display:grid;
+  grid-template-areas: "select";
+  background-color:white;
+} */
+/*
+select, .wrapper::after{
+  box-sizing: border-box;
+  grid-area: select;
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: black;
+  clip-path: polygon(100% 0%, 0 0%, 50% 50%);
+} */

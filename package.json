@@ -4,7 +4,7 @@
   "description": "My personal website showcasing my work both in games, web and experiments",
   "main": "./scripts/main.js",
   "scripts": {
-    "build": "browserify ./src/main.js > ./src/bundle.js && live-server"
+    "start": "browserify ./src/main.js > ./src/bundle.js && live-server"
   },
   "keywords": [
     "website",

@@ -1,8 +1,9 @@
 .header{
   margin-top: 30px;
   padding-bottom: 20px;
+  margin-bottom: 20px;
   /* margin-bottom: 30px; */
-  background: linear-gradient(1deg, rgba(255,255,255,0) 12%, rgba(128,128,128,1) 15%,rgba(255,255,255,1) 15.5%);
+  background: linear-gradient(1deg, rgba(255,255,255,0) 19%, rgba(128,128,128,1) 22%,rgba(255,255,255,1) 22.5%);
   /* box-shadow: 2px 5px 5px lightgrey; */
 }
 

@@ -3,7 +3,15 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcryptjs');
 const cors = require('cors');
 const gamecredits = require('./data/data_gamecredits.js');
+const nodemailer = require('nodemailer');
 
+const transporter = nodemailer.createTransport({
+  service: process.env.MAILSERVICE,
+  auth: {
+    user: process.env.MAILUSER,
+    pass: process.env.MAILPASS
+  }
+});
 // const gamecredits = [
 //   {
 //     imgsrc: '../src/assets/gameboxes/d2_blackarmory.jpg',
@@ -31,8 +39,28 @@ app.get('/projectsgames', (req, res)=>{
 });
 
 app.post('/submitemail', (req, res)=>{
-  console.log(req);
-  return res.status(200).json({email: req.email});
+  setTimeout(() => {
+    const { name, email, type } = req.body;
+    const mail = {
+      from: process.env.MAILUSER,
+      to: process.env.MAILUSER,
+      subject: 'Web Contact From Portfolio',
+      text: `Name: ${name} \nEmail:${email}\nFor:${type}`
+    };
+    // console.log(mail);
+    // console.log(transporter);
+    // return res.status(400).json('something');
+    return res.status(200).json(mail);
+    transporter.sendMail(mail, (err,info)=>{
+      if(err){
+        return res.status(400).json(err);
+      } else {
+        return res.status(200).json({email: email});
+      }
+    });
+
+  },500);
+
 });
 
 const port = 3002;
