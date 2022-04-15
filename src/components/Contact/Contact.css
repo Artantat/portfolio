@@ -8,22 +8,17 @@
 
 .contactForm {
   display:grid;
-  /* width:60%; */
-  /* align-content: center; */
   justify-content: center;
-  /* height: 160px; */
 }
 
 .contactMessage{
   text-overflow: ellipsis;
   width:auto;
   min-height: 100px;
-  /* vertical-align:top; */
   resize:none;
 }
 
 .contactSubmit{
-  /* justify-content: center; */
   width:50%;
   margin:auto;
 }
@@ -49,44 +44,11 @@
 
 .contactLabels{
   text-align: center;
-  /* justify-content: center; */
-  /* width: 100%; */
 }
 
 .contactInput{
-  /* margin-bottom: 15px; */
 }
 
 .contactDropdown{
-  /* position:relative; */
   width:100%;
 }
-
-/* .contactDropdown::after{
-  position: absolute;
-  content: ">";
-  color:black;
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  z-index: 1;
-  border-color: rgba(0,0,0,1);
-} */
-
-/* .wrappper{
-  display:grid;
-  grid-template-areas: "select";
-  background-color:white;
-} */
-/*
-select, .wrapper::after{
-  box-sizing: border-box;
-  grid-area: select;
-  content: "";
-  width: 0.8em;
-  height: 0.5em;
-  background-color: black;
-  clip-path: polygon(100% 0%, 0 0%, 50% 50%);
-} */

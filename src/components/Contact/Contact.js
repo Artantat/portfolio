@@ -43,6 +43,7 @@ class Contact extends Component {
       .catch(err => {
         this.component.innerHTML = (`
           <div class="contactThanks contactError">${err}</div>
+
         `);
         // console.log(err));
       });

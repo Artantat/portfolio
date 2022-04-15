@@ -1,7 +1,6 @@
 .demoReelContainer {
   display: grid;
   justify-content: center;
-  /* align-content: center; */
 }
 
 .demoHeader {
@@ -35,15 +34,7 @@
 }
 
 .demoReelVideo {
-  /* --vid-width:800px; */
-  /* display:inline-flex;
-  justify-content: center; */
-  /* align-content: center; */
-  /* margin: 0 auto; */
   width: 80%;
   min-width: 400px;
   margin:auto;
-  /* height: 600px; */
-  /* height: calc(var(--vid-width) / 3); */
-
 }

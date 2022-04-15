@@ -12,6 +12,7 @@ class DemoReel extends Component {
       <video class="demoReelVideo" controls>
         <source src="./src/assets/demoreel/demoreel.mp4" type="video/mp4" alt="Demo Reel">
       </video>
+      
     `);
   }
 
