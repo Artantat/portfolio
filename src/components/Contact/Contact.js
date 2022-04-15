@@ -13,13 +13,15 @@ class Contact extends Component {
       const email = document.getElementById('email').value;
       const name = document.getElementById('contactName').value;
       const type = document.getElementById('contactType').value;
+      const message = document.getElementById('contactMessage').value;
       fetch(`http://localhost:3002/submitemail`, {
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
           name: name,
           email: email,
-          type: type
+          type: type,
+          message: message
         })
       })
       .then(response => {
@@ -27,20 +29,23 @@ class Contact extends Component {
         if (response.status === 200){
           return response.json();
         } else {
-          throw new Error('Squiggle');
+          throw new Error(`Error ${response.status} Please try again later.`);
         }
 
       })
       .then(data => {
-
         this.component.innerHTML = (`
-          <div class=contactThanks>${data.email},</br></br>Thanks for reaching out! I'll get back to you as soon as i can. In the mean time check out the rest of the site or the blog. </br></br>Regards,</br>William Castagna</div>
+          <div class="contactThanks">${data.email},</br></br>Thanks for reaching out! I'll get back to you as soon as i can.</br>In the mean time follow me on on my socials or check out my blog. </br></br>Regards,</br>William Castagna</div>
           `);
 
 
       })
-      .catch(err => console.log(err));
-
+      .catch(err => {
+        this.component.innerHTML = (`
+          <div class="contactThanks contactError">${err}</div>
+        `);
+        // console.log(err));
+      });
     };
 
     this.component.innerHTML = (`
@@ -61,7 +66,9 @@ class Contact extends Component {
           </select>
         </div>
         </br>
-
+        <div class="contactLabels" for="contactMessage">Message</div>
+        <textarea class="contactMessage" id="contactMessage" type="text" maxlength="250"></textarea>
+        </br>
       </form>
     `);
     this.component.children[0].appendChild(submitbtn.component);

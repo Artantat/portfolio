@@ -40,19 +40,27 @@ app.get('/projectsgames', (req, res)=>{
 
 app.post('/submitemail', (req, res)=>{
   setTimeout(() => {
-    const { name, email, type } = req.body;
+    const { name, email, type, message } = req.body;
     const mail = {
       from: process.env.MAILUSER,
       to: process.env.MAILUSER,
-      subject: 'Web Contact From Portfolio',
-      text: `Name: ${name} \nEmail:${email}\nFor:${type}`
+      subject: `Web Contact From Portfolio For:${type}`,
+      text: (`
+        Name: ${name}
+        From: ${email}
+        Message: ${message}
+      `)
     };
+    // console.log(mail);
     // console.log(mail);
     // console.log(transporter);
     // return res.status(400).json('something');
-    return res.status(200).json(mail);
+    return res.status(200).json({email: email});
     transporter.sendMail(mail, (err,info)=>{
       if(err){
+        console.log(err);
+        console.log('error sending mail. make all env variables are set properly and @gmail.com is part of username');
+
         return res.status(400).json(err);
       } else {
         return res.status(200).json({email: email});

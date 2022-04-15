@@ -55,7 +55,7 @@ select{
   /* all:unset; */
   /* display:grid; */
   min-width:15ch;
-  max-width:30ch;
+  /* max-width:30ch; */
   line-height: normal;
   /* height:2rem; */
   width:30ch;
