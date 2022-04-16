@@ -36,10 +36,9 @@ const footerIcons = [
 const getFooterIcons = () =>{
   footerHtml = '';
   for (let icon of footerIcons){
-    // console.log(icon);
     footerHtml += `<a href="${icon.link}" class="footerIcon"><img class="footerIconImg" src="${icon.src}" alt="${icon.name}" /></a>`;
   }
-  // console.log(footerHtml);
+
   return footerHtml;
 }
 

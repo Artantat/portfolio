@@ -1,6 +1,4 @@
 const SkillTagBox = require('../SkillTag/SkillTagBox');
-// const GameTitle = require('./GameTitle');
-// const GameBoxImg = require('./GameBoxImg');
 const Component = require('../Component');
 
 class GameProject extends Component{
@@ -21,11 +19,7 @@ class GameProject extends Component{
       ${new SkillTagBox(skillTags).getHTML()}
 
     `);
-    // let innerComponents = '';
-    // innerComponents += new GameBoxImg(imgsrc, `${title} image`).getHTML();
-    // innerComponents += new GameTitle(title).getHTML();
-    // innerComponents += new SkillTagBox(skillTags).getHTML();
-    // this.component.innerHTML = innerComponents;
+
   }
 
 }

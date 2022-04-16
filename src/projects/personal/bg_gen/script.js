@@ -29,7 +29,5 @@ color2.addEventListener("input", setGradient);
 rndBtn.addEventListener("click", function(){
   color1.value = getRandomColor();
   color2.value = getRandomColor();
-  console.log(color1);
-  console.log(color2);
   setGradient();
 })

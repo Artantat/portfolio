@@ -1,4 +1,5 @@
 const Component = require('../Component');
+const BASE_URL = require('../../init');
 
 class Contact extends Component {
   constructor(){
@@ -8,13 +9,11 @@ class Contact extends Component {
     submitbtn.component.classList.add('contactSubmit');
     submitbtn.component.innerText = 'Submit';
     submitbtn.component.onclick = (event) =>{
-      // console.log(BASE_ROUTE_URL);
-      // console.log('click', event, event.target, event.target.value);
       const email = document.getElementById('email').value;
       const name = document.getElementById('contactName').value;
       const type = document.getElementById('contactType').value;
       const message = document.getElementById('contactMessage').value;
-      fetch(`http://localhost:3002/submitemail`, {
+      fetch(`${BASE_URL}/submitemail`, {
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify({
@@ -45,7 +44,7 @@ class Contact extends Component {
           <div class="contactThanks contactError">${err}</div>
 
         `);
-        // console.log(err));
+
       });
     };
 
@@ -73,7 +72,6 @@ class Contact extends Component {
       </form>
     `);
     this.component.children[0].appendChild(submitbtn.component);
-    // this.component.appendChild(submitbtn.component);
 
   }
 

@@ -8,7 +8,6 @@ class Header extends Component {
     this.component.id = 'header';
     this.component.innerHTML = (`
       <div class="banner">
-        
         <div class='headerName'>${name}</div>
       </div>
     `);

@@ -2,18 +2,12 @@
   margin-top: 30px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  /* margin-bottom: 30px; */
   background: linear-gradient(1deg, rgba(255,255,255,0) 19%, rgba(128,128,128,1) 22%,rgba(255,255,255,1) 22.5%);
-  /* box-shadow: 2px 5px 5px lightgrey; */
 }
 
 .banner{
   display: inline-flex;
   align-items: flex-end;
-  /* justify-content: flex-end; */
-  /* border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: black; */
   width: 100%;
 }
 
@@ -32,6 +26,4 @@
   border-width: 3px;
   border-color: black;
   margin-right: 50px;
-  /* justify-content: flex-end; */
-  /* margin-bottom: 10px; */
 }
