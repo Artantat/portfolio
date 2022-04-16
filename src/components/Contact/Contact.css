@@ -18,6 +18,11 @@
   resize:none;
 }
 
+.contactValidError{
+  width:100%;
+  font-size: 0.75rem;
+  color:red;
+}
 .contactSubmit{
   width:50%;
   margin:auto;

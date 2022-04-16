@@ -1,5 +1,6 @@
 const Component = require('../Component');
 const BASE_URL = require('../../init');
+const { validateEmail } = require('../../utils');
 
 class Contact extends Component {
   constructor(){
@@ -55,6 +56,7 @@ class Contact extends Component {
         </br>
         <div class="contactLabels" for="email"> Email </div>
         <input class="contactInput" id="email" type="email"/>
+        <div class="contactValidError" id="emailValidation"></div>
         </br>
         <div class="contactLabels" for="contactType">Reason to get in touch</div>
         <div class="wrapper">
@@ -68,11 +70,31 @@ class Contact extends Component {
         </br>
         <div class="contactLabels" for="contactMessage">Message</div>
         <textarea class="contactMessage" id="contactMessage" type="text" maxlength="250"></textarea>
+        <div class="contactValidError" id="contactMessageValid"></div>
         </br>
       </form>
     `);
     this.component.children[0].appendChild(submitbtn.component);
-
+    for (let child of this.component.children[0]){
+      if (child.id === 'email'){
+        child.oninput = (event) => {
+          if (validateEmail(event.target.value)){
+            document.getElementById('emailValidation').innerHTML = '';
+          } else {
+            document.getElementById('emailValidation').innerHTML = (`
+              Emails should have @ and .com ex. test@test.com
+              `);
+          }
+        };
+      }
+      if (child.id === 'contactMessage'){
+        child.oninput = (event) =>{
+          document.getElementById('contactMessageValid').innerHTML = (`
+            message ${event.target.value.length} / 250
+          `);
+        }
+      }
+    }
   }
 
 
