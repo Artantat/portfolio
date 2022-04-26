@@ -12,8 +12,7 @@ class App{
       url: '/about',
       validUrls: [
         '/about',
-        '/games',
-        '/webapps',
+        '/blog',
         '/demoreel',
         '/contact'
       ]
@@ -40,40 +39,41 @@ class App{
       new NavBar([
         {
           name:'About',
+          id:'nav_about',
           callback: () => this.setState.bind(this, '/about')
         },
         {
-          name:'Games',
-          callback: () => this.setState.bind(this, '/games')
-        },
-        {
-          name:'Web Apps',
-          callback: () => this.setState.bind(this, '/webapps')
-        },
-        {
           name:'Demo Reel',
+          id:'nav_demoreel',
           callback: () => this.setState.bind(this, '/demoreel')
         },
         {
+          name:'Blog',
+          id:'nav_blog',
+          callback: () => this.setState.bind(this, '/blog')
+        },
+        {
           name:'Contact',
+          id:'nav_contact',
           callback: () => this.setState.bind(this, '/contact')
         }
       ])).component);
     // root.appendChild(new NavBar(['About','Games','Personal Projects','Contact']).component);
     switch (this.state.url) {
       case '/about':
+        document.getElementById('nav_about').classList.add('activeNavBarItem');
         root.appendChild(new About().component);
         break;
-      case '/games':
+      case '/blog':
+        document.getElementById('nav_blog').classList.add('activeNavBarItem');
         root.appendChild(new ProjectPanel('GAMES',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
         break;
-      case '/webapps':
-        root.appendChild(new ProjectPanel('Web Apps',`Here you can find a collection of WebApps that I've created`).component);
-        break;
       case '/demoreel':
+        document.getElementById('nav_demoreel').classList.add('activeNavBarItem');
         root.appendChild(new DemoReel().component);
         break;
       case '/contact':
+        document.getElementById('nav_contact').classList.add('activeNavBarItem');
         root.appendChild(new Contact().component);
         break;
       default:

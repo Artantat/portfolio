@@ -17,13 +17,3 @@
   width: 100%;
   text-align: right;
 }
-
-.profilePic{
-  border-radius: 50%;
-  width:100px;
-  height:100px;
-  border-style: solid;
-  border-width: 3px;
-  border-color: black;
-  margin-right: 50px;
-}

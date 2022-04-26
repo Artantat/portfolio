@@ -10,7 +10,7 @@ class DemoReel extends Component {
         <div class="demoDescription">${description}</div>
       </div>
       <video class="demoReelVideo" controls>
-        <source src="https://www.dropbox.com/s/43ojs5t1fud8gmt/wcastagna_demoreel.mp4" type="video/mp4" alt="Demo Reel">
+        <source src="" type="video/mp4" alt="Demo Reel">
       </video>
 
     `);

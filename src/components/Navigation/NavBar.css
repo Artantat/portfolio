@@ -10,7 +10,8 @@
 .navBarItem {
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  /* padding-bottom: 10px; */
   border-radius: 5px;
   border-width:1px;
   border-style: dashed;
@@ -22,4 +23,12 @@
 
 .navBarItem:hover {
   background: linear-gradient(to top, rgba(100,100,100,1) 0%, rgba(100,100,100,0) 30%);
+}
+
+.activeNavBarItem {
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
 }

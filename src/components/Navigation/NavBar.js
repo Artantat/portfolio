@@ -6,7 +6,7 @@ class NavBar extends Component{
     super('nav');
     this.component.classList.add('navBar');
     for (let item of items){
-      this.component.appendChild(new NavBarItem(item.name, item.callback).component);
+      this.component.appendChild(new NavBarItem(item.name,item.id, item.callback).component);
     }
 
   }

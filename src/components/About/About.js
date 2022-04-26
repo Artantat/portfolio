@@ -3,7 +3,7 @@ const Component = require('../Component');
 
 
 class About extends Component{
-  constructor(pic='./src/assets/profile/profile.png', name='Artantat', header='Healine', description='Something About me'){
+  constructor(pic='./src/assets/profile/profile.jpeg', name='Artantat', header='Healine', description='Something About me'){
     super('div');
     this.component.classList.add('about');
     this.component.id = 'about';
