@@ -17,11 +17,6 @@ const footerIcons = [
     link: 'https://opensea.io/Artantat'
   },
   {
-    name: 'Email',
-    src: './src/assets/icons/email_icon.png',
-    link: 'mailto: wcastagna@gmail.com'
-  },
-  {
     name: 'Redbubble',
     src: './src/assets/icons/redbubble_icon.png',
     link: 'https://www.redbubble.com/people/Artantat/shop'

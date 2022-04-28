@@ -1,3 +1,5 @@
+// Refactor this with new component model...
+
 class Component{
   constructor(elementType='div'){
     this.component = document.createElement(elementType);
