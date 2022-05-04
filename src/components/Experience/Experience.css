@@ -1,0 +1,62 @@
+.expStudioHeader {
+  background: linear-gradient(to right, white, rgba(255,255,255,0));
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.expBox {
+  width:100%;
+  /* min-height: 1ch; */
+  display:block;
+  justify-content: center;
+  margin: auto;
+  /* display:flex;
+
+  justify-content: center; */
+}
+.expStudio {
+  font-size: 1.5rem;
+  padding-right: 5%;
+  width:100%;
+  /* display:flex; */
+}
+
+.expStudioTime {
+  font-size: 0.75rem;
+  /* text-align: right; */
+  padding-right: 5%;
+}
+
+.expExpand {
+  width: 80%;
+  min-height: 1ch;
+  display:inline-flex;
+  index:1;
+  /* flex:wrap; */
+  background-color: rgba(255,255,255,0.4);
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.expExpand:hover {
+  background-color:white;
+}
+.expPos {
+  pointer-events: none;
+  min-width:15ch;
+  width:40%;
+  text-align: right;
+  padding-left:10px;
+  padding-right: 10px;
+  border-right-style: solid;
+  border-right-color: rgba(0,0,0,1);
+  border-right-width: 2px;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.expTitle {
+  pointer-events: none;
+  min-width:15ch;
+  padding-left: 10px;
+}

@@ -7,11 +7,16 @@ class Header extends Component {
     this.component.classList.add('header');
     this.component.id = 'header';
     this.component.innerHTML = (`
-      <div class="banner">
-        <div class='headerName'>${name}</div>
+      <div class="banner" id='banner'>
+        <img src="${pic}" alt="Picture" class="logo"/>
+        <div>
+          <div class='headerName'>${name}</div>
+          <div class='headerPos'>VFX, Creative, & Code</div>
+        </div>
       </div>
     `);
-    this.component.appendChild(navbar.component);
+    this.component.children[0].appendChild(navbar.component);
+    // this.component.appendChild(navbar.component);
   }
 }
 

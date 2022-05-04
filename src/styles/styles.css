@@ -1,5 +1,6 @@
 @import 'main.css';
 @import '../components/About/About.css';
+@import '../components/Experience/Experience.css';
 @import '../components/Header/Header.css';
 @import '../components/Footer/Footer.css';
 @import '../components/Navigation/NavBar.css';

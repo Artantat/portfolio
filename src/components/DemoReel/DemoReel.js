@@ -5,15 +5,12 @@ class DemoReel extends Component {
     super('div');
     this.component.classList.add('demoReelContainer');
     this.component.innerHTML = (`
-      <div class="demoHeader">
-        <div class="demoReelTitle">${title}</div>
-        <div class="demoDescription">${description}</div>
-      </div>
       <video class="demoReelVideo" controls>
         <source src="" type="video/mp4" alt="Demo Reel">
       </video>
 
     `);
+    document.getElementById('Root').classList.add('dark');
   }
 
 }

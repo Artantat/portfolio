@@ -8,6 +8,7 @@ class Contact extends Component {
     this.component.classList.add('contactContainer');
     const submitbtn = new Component('button');
     submitbtn.component.classList.add('contactSubmit');
+    document.getElementById('Root').classList.remove('dark');
     submitbtn.component.id = 'submitbtn';
     submitbtn.component.innerText = 'Submit';
     submitbtn.component.onclick = (event) =>{
@@ -102,6 +103,7 @@ class Contact extends Component {
         }
       }
     }
+
   }
 
 

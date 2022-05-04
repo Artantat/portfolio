@@ -9,11 +9,11 @@ const Contact = require('./Contact/Contact');
 class App{
   constructor(){
     this.state = {
-      url: '/about',
+      url: '/work',
       validUrls: [
-        '/about',
-        '/blog',
-        '/demoreel',
+        '/bio',
+        '/exp',
+        '/work',
         '/contact'
       ]
     };
@@ -34,42 +34,42 @@ class App{
     root.innerHTML = '';
     root.classList.add('main');
     root.appendChild(new Header(
-      './src/assets/profile/profile.png',
+      './src/assets/profile/profile.jpeg',
       'William Castagna',
       new NavBar([
         {
-          name:'About',
-          id:'nav_about',
-          callback: () => this.setState.bind(this, '/about')
+          name:'Work',
+          id:'nav_work',
+          callback: () => this.setState.bind(this, '/work')
         },
         {
-          name:'Demo Reel',
-          id:'nav_demoreel',
-          callback: () => this.setState.bind(this, '/demoreel')
+          name:'Bio',
+          id:'nav_bio',
+          callback: () => this.setState.bind(this, '/bio')
         },
         {
-          name:'Blog',
-          id:'nav_blog',
-          callback: () => this.setState.bind(this, '/blog')
+          name:'Experience',
+          id:'nav_exp',
+          callback: () => this.setState.bind(this, '/exp')
         },
         {
-          name:'Contact',
+          name:'Hire Me',
           id:'nav_contact',
           callback: () => this.setState.bind(this, '/contact')
         }
       ])).component);
     // root.appendChild(new NavBar(['About','Games','Personal Projects','Contact']).component);
     switch (this.state.url) {
-      case '/about':
-        document.getElementById('nav_about').classList.add('activeNavBarItem');
+      case '/bio':
+        document.getElementById('nav_bio').classList.add('activeNavBarItem');
         root.appendChild(new About().component);
         break;
-      case '/blog':
-        document.getElementById('nav_blog').classList.add('activeNavBarItem');
+      case '/exp':
+        document.getElementById('nav_exp').classList.add('activeNavBarItem');
         root.appendChild(new ProjectPanel('GAMES',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
         break;
-      case '/demoreel':
-        document.getElementById('nav_demoreel').classList.add('activeNavBarItem');
+      case '/work':
+        document.getElementById('nav_work').classList.add('activeNavBarItem');
         root.appendChild(new DemoReel().component);
         break;
       case '/contact':

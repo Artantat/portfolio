@@ -1,10 +1,10 @@
 .navBar {
   display: inline-flex;
-  justify-content: flex-end;
-
-  width: 100%;
+  /* justify-content: flex-end; */
+  /* float:right; */
+  /* width: 100%; */
   fort-size:1.5rem;
-
+margin-left:auto;
 }
 
 .navBarItem {
@@ -12,17 +12,20 @@
   padding-right: 10px;
   margin-bottom: 10px;
   /* padding-bottom: 10px; */
-  border-radius: 5px;
-  border-width:1px;
-  border-style: dashed;
-  border-color: white;
-  font-weight: bold;
-  color: light-blue;
+  /* border-radius: 5px;
+  border-width:1px; */
+  /* border-style: dashed; */
+  /* border-color: white; */
+  /* font-weight: bold; */
+  /* color: light-blue; */
   cursor: pointer;
 }
 
 .navBarItem:hover {
-  background: linear-gradient(to top, rgba(100,100,100,1) 0%, rgba(100,100,100,0) 30%);
+  /* background: linear-gradient(to top, rgba(100,100,100,1) 0%, rgba(100,100,100,0) 30%); */
+  border-bottom-style:solid;
+  border-bottom-width: 3px;
+  border-bottom-color: rgba(0,0,0,0.5);
 }
 
 .activeNavBarItem {

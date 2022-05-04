@@ -1,7 +1,11 @@
 .demoReelContainer {
   display: grid;
   justify-content: center;
+  /* background-color: rgb(50,50,50); */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
 
 .demoHeader {
   text-align: center;
@@ -34,7 +38,7 @@
 }
 
 .demoReelVideo {
-  width: 80%;
+  width: 90%;
   min-width: 400px;
   margin:auto;
 }

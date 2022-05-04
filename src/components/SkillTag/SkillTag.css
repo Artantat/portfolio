@@ -13,13 +13,11 @@
 .gameTag, .skillTag{
   padding-left: 10px;
   padding-right: 10px;
-  background: linear-gradient(0deg,#4E8F82,5%,#8EBAB1);
-  border-radius: 4px;
+  /* background: linear-gradient(0deg,#4E8F82,5%,#8EBAB1); */
+  background-color:#8EBAB1;
+  /* border-radius: 4px; */
   border: 1px;
   border-style: groove;
   border-color: #95adbe;
   margin:2px;
-}
-.gameTag:hover, .skillTag:hover {
-  background: linear-gradient(180deg,#574f7d,5%,#95adbe);
 }
