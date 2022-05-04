@@ -69,7 +69,7 @@ class Experience extends Component{
     }
 
     // const biowareCreds = new Component('div',{class:'expStudio',id:'Bioware'});
-    // const vvCreds = new Component('div',{class:'expStudio',id:'Vicarious'});
+    // const vvCreds = new Component('div',{class:'expStudio',id:'Vicarious'}); 
     // const edgeCreds = new Component('div',{class:'expStudio',id:'Edge'});
     //
     // biowareCreds.component.innerHTML = (`
