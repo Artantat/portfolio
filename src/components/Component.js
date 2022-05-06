@@ -2,7 +2,6 @@
 // the innerHTML on the component the listener is then lost... this may be from
 // the id missing? I wonder if this would happen if i supplied an id: for the expand
 
-
 class Component{
   constructor(elementType='div', attrs={}, events={}){
     this.elementType = elementType;
@@ -18,11 +17,9 @@ class Component{
       this.component.setAttribute(attr,this.attrs[attr]);
     }
     for(let evnt in this.events){
-      console.log(evnt);
-      console.log(this.events[evnt]);
       this.component.addEventListener(evnt, this.events[evnt]);
-      // console.log(test);
     }
+    
   }
 
   getHTML(){

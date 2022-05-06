@@ -1,0 +1,33 @@
+.postContainer {
+  display:inline-block;
+  width: auto;
+  min-width: 200px;
+  margin-top:10px;
+  padding-top:10px;
+  margin-bottom: 20px;
+  margin-left:10%;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.postContent {
+  font-size: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  margin-left: 10px;
+  margin-right: 50px;
+
+}
+
+.postImg {
+  --gameImgWidth:40%;
+
+  float:left;
+  /* border-radius: 4px; */
+  width:var(--gameImgWidth);
+  min-width: 300px;
+  height: calc(var(--gameImgWidth) / 9);
+
+  margin-right: 15px;
+  margin-bottom: 5px;
+}

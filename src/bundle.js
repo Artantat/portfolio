@@ -136,7 +136,6 @@ module.exports = App;
 // the innerHTML on the component the listener is then lost... this may be from
 // the id missing? I wonder if this would happen if i supplied an id: for the expand
 
-
 class Component{
   constructor(elementType='div', attrs={}, events={}){
     this.elementType = elementType;
@@ -152,11 +151,9 @@ class Component{
       this.component.setAttribute(attr,this.attrs[attr]);
     }
     for(let evnt in this.events){
-      console.log(evnt);
-      console.log(this.events[evnt]);
       this.component.addEventListener(evnt, this.events[evnt]);
-      // console.log(test);
     }
+    
   }
 
   getHTML(){
@@ -295,7 +292,7 @@ class Contact extends Component {
 
 module.exports = Contact;
 
-},{"../../init":15,"../../utils":17,"../Component":3}],5:[function(require,module,exports){
+},{"../../init":16,"../../utils":18,"../Component":3}],5:[function(require,module,exports){
 const Component = require('../Component');
 
 class DemoReel extends Component {
@@ -318,6 +315,7 @@ module.exports = DemoReel;
 },{"../Component":3}],6:[function(require,module,exports){
 const Component = require('../Component');
 const GameProject = require('../GameProject/GameProject');
+const ProjectPost = require('../ProjectPost/ProjectPost');
 const exp = require('./Experience_data.js');
 
 // refactor this component to be more procedural.
@@ -344,14 +342,14 @@ class Experience extends Component{
         const expand = new Component('div', {class:'expExpand', id:project.id}, {
             click: (event) => {
             const target = event.target;
-            console.log('target',target);
             target.toggleAttribute('expanded');
             if(target.attributes.expanded){
-              target.parentElement.appendChild(new GameProject(project.imgsrc, project.title,  project.skillTags, project.description,{id:`full_${project.id}`}).component);
+              target.parentElement.appendChild(new ProjectPost(project.imgsrc,  project.skillTags, project.description,{id:`full_${project.id}`}).component);
             } else {
               const remove = document.getElementById(`full_${project.id}`);
               target.parentElement.removeChild(remove);
             }
+            document.getSelection().removeAllRanges();
           }
         });
 
@@ -361,8 +359,8 @@ class Experience extends Component{
         position.component.innerHTML = project.position;
         title.component.innerHTML = project.title;
 
-        expand.component.appendChild(position.component);
         expand.component.appendChild(title.component);
+        expand.component.appendChild(position.component);
 
         entry.component.appendChild(expand.component);
         box.component.appendChild(entry.component);
@@ -542,22 +540,22 @@ class Experience extends Component{
 
 module.exports = Experience;
 
-},{"../Component":3,"../GameProject/GameProject":9,"./Experience_data.js":7}],7:[function(require,module,exports){
+},{"../Component":3,"../GameProject/GameProject":9,"../ProjectPost/ProjectPost":14,"./Experience_data.js":7}],7:[function(require,module,exports){
 const exp = [
   {
-    id:'SWTOR-Descent',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
-    title: 'SWTOR - The Dark Descent',
-    position: 'Senior VFX Artist',
-    studio: 'Bioware',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
-  {
     id:'SWTOR-LegacySith',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/swtor_7_0_legacy_of_sith.jpg',
     title: 'SWTOR - Legacy of the Sith',
     position: 'Lead VFX Artist',
+    studio: 'Bioware',
+    skillTags: ['VFX','Shader FX','Character FX'],
+    description: `This was the first major release after moving over to Bioware. I started the release as a Senior VFX Artist and was then promoted to Lead part way through the developement cycle. </br></br>The team has been awesome, super collaborative and open to new ideas. It's also a blast working on Star Wars which has such a rich and deep universe. </br></br>In terms of tools it's also pretty interesting. The game itself launched a decade ago and the tools are dated but there are some really interesting paradigmns and workflows. They are rough but interesting. </br></br>It's exciting to use the years of new engines and tools at VV and help modernize and improve the workflows on this game.`
+  },
+  {
+    id:'SWTOR-Descent',
+    imgsrc: './src/assets/gameboxes/swtor_6_3_dark_descent.png',
+    title: 'SWTOR - The Dark Descent',
+    position: 'Senior VFX Artist',
     studio: 'Bioware',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
@@ -587,7 +585,7 @@ const exp = [
   },
   {
     id:'Destiny-Warmind',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/destiny-2-warmind.jpg',
     title: 'Destiny 2 - War Mind',
     position: 'Senior VFX Artist',
     studio: 'Vicarious Visions',
@@ -596,7 +594,7 @@ const exp = [
   },
   {
     id:'Skylanders:Imaginators-Crash',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/Skylanders_Crashedition.jpg',
     title: 'Skylanders: Imaginators - Crash Action Pack',
     position: 'Senior VFX Artist',
     studio: 'Vicarious Visions',
@@ -605,7 +603,7 @@ const exp = [
   },
   {
     id:'Skylanders:SuperChargers',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/skylanders_superchargers.jpeg',
     title: 'Skylanders: Super Chargers',
     position: 'Senior VFX Artist',
     studio: 'Vicarious Visions',
@@ -614,63 +612,63 @@ const exp = [
   },
   {
     id:'Skylanders:TrapTeam',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/Skylanders_TT_Art.jpg',
     title: 'Skylanders: Trap Team Tablet',
-    position: 'Senior VFX Artist',
+    position: 'Senior Artist - Generalist',
     studio: 'Vicarious Visions',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id:'Skylanders:LostIslands',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/Skylanders_Lost_Islands.jpg',
     title: 'Skylanders: Lost Islands',
-    position: 'Senior VFX Artist',
+    position: 'Senior Artist - Generalist & Lead',
     studio: 'Vicarious Visions',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id:'Skylanders:Spyro3ds',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/Skylanders_Spyro_Adventure_box_art.jpg',
     title: `Sklanders: Spyro's Adventure 3ds`,
-    position: 'Senior VFX Artist',
+    position: 'Environment Artist',
     studio: 'Vicarious Visions',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id:'DJHero',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/dj_hero_3ds.jpg',
     title: 'DJ Hero 3ds',
-    position: 'Senior VFX Artist',
+    position: 'Environment Artist',
     studio: 'Vicarious Visions',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id:'BandHero',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/Wii_bandhero.jpg',
     title: 'Band Hero',
-    position: 'Senior VFX Artist',
+    position: 'Environment Artist',
     studio: 'Vicarious Visions',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id:'MUA2',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/Marvel_Ultimate_Alliance_2.jpg',
     title: 'Marvel Ultimate Alliance 2',
-    position: 'Senior VFX Artist',
+    position: 'Environment Artist',
     studio: 'Vicarious Visions',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
   },
   {
     id:'Hulk',
-    imgsrc: './src/assets/gameboxes/d2_blackarmory.jpg',
+    imgsrc: './src/assets/gameboxes/IncredibleHulk.jpg',
     title: 'The Incredible Hulk',
-    position: 'Senior VFX Artist',
+    position: 'Environment Artist',
     studio: 'Edge of Reality',
     skillTags: ['VFX','Shader FX','Character FX'],
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
@@ -766,7 +764,7 @@ class GameProject extends Component{
 
 module.exports = GameProject;
 
-},{"../Component":3,"../SkillTag/SkillTagBox":14}],10:[function(require,module,exports){
+},{"../Component":3,"../SkillTag/SkillTagBox":15}],10:[function(require,module,exports){
 const Component = require('../Component');
 const NavBar = require('../Navigation/NavBar');
 
@@ -860,7 +858,28 @@ class ProjectPanel extends Component{
 
 module.exports = ProjectPanel;
 
-},{"../../init":15,"../Component":3,"../Experience/Experience":6,"../GameProject/GameProject":9}],14:[function(require,module,exports){
+},{"../../init":16,"../Component":3,"../Experience/Experience":6,"../GameProject/GameProject":9}],14:[function(require,module,exports){
+const SkillTagBox = require('../SkillTag/SkillTagBox');
+const Component = require('../Component');
+
+class ProjectPost extends Component{
+  constructor(imgsrc='../../assets/gameboxes/default.jpg', skillTags=['art', 'banana','apple','squiggle','orange','zippy'], description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',attrs={},events={}){
+    super('div',attrs);
+    this.component.classList.add('postContainer');
+    const postContent = new Component('div',{class:'postContent'});
+    postContent.component.appendChild(new Component('img',{src:imgsrc,alt:'postImage',class:'postImg'}).component);
+    postContent.component.innerHTML += description;
+
+    this.component.appendChild(postContent.component);
+    this.component.appendChild(new SkillTagBox(skillTags).component);
+
+  }
+
+}
+
+module.exports = ProjectPost;
+
+},{"../Component":3,"../SkillTag/SkillTagBox":15}],15:[function(require,module,exports){
 // const SkillTag = require('./SkillTag');
 const Component = require('../Component');
 
@@ -878,18 +897,18 @@ class SkillTagBox extends Component{
 
 module.exports = SkillTagBox;
 
-},{"../Component":3}],15:[function(require,module,exports){
+},{"../Component":3}],16:[function(require,module,exports){
  const BASE_URL = "https://will-cast-portfolio.herokuapp.com";
 
  module.exports = BASE_URL;
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 const App = require('./components/App');
 
 const app = new App();
 app.route();
 
-},{"./components/App":2}],17:[function(require,module,exports){
+},{"./components/App":2}],18:[function(require,module,exports){
 
 
 const validateEmail = (email) => {
@@ -915,4 +934,4 @@ const validateFields = (fields) => {
 
 module.exports = { validateEmail, validateFields };
 
-},{}]},{},[16]);
+},{}]},{},[17]);

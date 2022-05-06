@@ -1,5 +1,6 @@
 const Component = require('../Component');
 const GameProject = require('../GameProject/GameProject');
+const ProjectPost = require('../ProjectPost/ProjectPost');
 const exp = require('./Experience_data.js');
 
 // refactor this component to be more procedural.
@@ -26,14 +27,14 @@ class Experience extends Component{
         const expand = new Component('div', {class:'expExpand', id:project.id}, {
             click: (event) => {
             const target = event.target;
-            console.log('target',target);
             target.toggleAttribute('expanded');
             if(target.attributes.expanded){
-              target.parentElement.appendChild(new GameProject(project.imgsrc, project.title,  project.skillTags, project.description,{id:`full_${project.id}`}).component);
+              target.parentElement.appendChild(new ProjectPost(project.imgsrc,  project.skillTags, project.description,{id:`full_${project.id}`}).component);
             } else {
               const remove = document.getElementById(`full_${project.id}`);
               target.parentElement.removeChild(remove);
             }
+            document.getSelection().removeAllRanges();
           }
         });
 
@@ -43,8 +44,8 @@ class Experience extends Component{
         position.component.innerHTML = project.position;
         title.component.innerHTML = project.title;
 
-        expand.component.appendChild(position.component);
         expand.component.appendChild(title.component);
+        expand.component.appendChild(position.component);
 
         entry.component.appendChild(expand.component);
         box.component.appendChild(entry.component);
@@ -69,7 +70,7 @@ class Experience extends Component{
     }
 
     // const biowareCreds = new Component('div',{class:'expStudio',id:'Bioware'});
-    // const vvCreds = new Component('div',{class:'expStudio',id:'Vicarious'}); 
+    // const vvCreds = new Component('div',{class:'expStudio',id:'Vicarious'});
     // const edgeCreds = new Component('div',{class:'expStudio',id:'Edge'});
     //
     // biowareCreds.component.innerHTML = (`
