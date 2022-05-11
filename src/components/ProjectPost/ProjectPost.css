@@ -19,6 +19,12 @@
 
 }
 
+.articleImg {
+  width:400px;
+  margin:0px;
+  /* overflow-wrap:anywhere; */
+}
+
 .postImg {
   --gameImgWidth:40%;
 
