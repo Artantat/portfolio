@@ -10,11 +10,12 @@
 .contactForm {
   display:grid;
   justify-content: center;
+  min-width: 300px;
 }
 
 .contactMessage{
   text-overflow: ellipsis;
-  width:auto;
+  /* width:auto; */
   min-height: 100px;
   resize:none;
 }
@@ -53,6 +54,7 @@
 }
 
 .contactInput{
+  min-width:300px;
 }
 
 .contactDropdown{

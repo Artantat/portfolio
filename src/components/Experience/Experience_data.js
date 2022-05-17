@@ -70,7 +70,9 @@ const exp = [
     description: (`
       I was only on <strong><em>Black Armory</em></strong> for a short while as i was finishing up the previous release and then jumped on pre-vis for Penumbra before coming back and helping close out this release.
       </br></br>
-      My focus was mainly weapons, secrets and reticles to help with the hidden secret mechanics.
+      My focus was mainly weapons, secrets and reticles to help with the hidden secret mechanics. This included setup for the reticles as well as shader work to work properly. There were a lot of weapons to go through so as soon as i was done with one I was on to another!
+      </br></br>
+      Working with Bungie was a really interesting experience coming from VV where there is so much overlap in influence and responsibility. Bungie on the other hand was a team of specialists with an area of focus and expertise like a well oiled machine. One draw back of this model though is that knowledge can become tribal and then potentially lost if a member leaves and hasn't documented it well. On the other hand it is incredibly difficult to know anything about everything all the time. These projects really reinforced my methodology around robust and clear documentation.
     `)
   },
   {
@@ -83,7 +85,7 @@ const exp = [
     description: (`
       <strong><em>War Mind</em></strong> was an awesome release to work on. I had the pleasure of doing all of the FX for the wurm god Xol which was a badass worm looking monster. While working on Xol I crafted ambient ash fx and prototyped some interesting pealing skin fx.
       </br></br>
-      It was really awesome working with Bungie, we were able to visit their studio and do some in person training for a few weeks before bringing it back to the rest of the team to ramp up on. Their tools were powerful and it was fun to dive into the shader system which drove the particle system. The VFX team at Bungie was really awesome to work with, both collaborative and imaginative.
+      It was really awesome working with Bungie, we were able to visit their studio and do some in person training for a few weeks before bringing it back to the rest of the team to ramp up on. Their tools were powerful and it was fun to dive into the shader system which drove the particle system. The VFX team at Bungie was really awesome to work with, both collaborative and imaginative. Through the training of our team at VV I created a good amount of detailed documentation to help us transition into the Bungie toolset and hit the ground running.
       </br></br>
       The engine was well optimized and powerful. We were able to create a lot of really awesome FX and materials. Their engine was one of the better ones that i've worked with albiet a bit cumbersome at times.
     `)
@@ -175,8 +177,19 @@ const exp = [
     title: 'DJ Hero 3ds',
     position: 'Environment Artist',
     studio: 'Vicarious Visions',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    skillTags: ['Environment Art', 'VFX'],
+    description: (`
+      DJ was a cool project to work on. Unfortunately it was cancelled before release but we showed the game at E3 along with other launch titles for the Nintendo 3ds. To be honest I liked playing this handheld version more than the base game. It just felt natural and really good to play.
+      </br></br>
+      The Environments themselves were interesting as well, experimenting with a graphitti like style. I worked on environments primarily as well as the lightshows for the environments.
+      </br></br>
+      There isn't a lot out there showing what we made but here are a couple screenshots!
+      <div class='postImages'>
+        <img class='postPic' src='./src/assets/games/djhero/dj01.jpg' alt='dj01'/>
+        <img class='postPic' src='./src/assets/games/djhero/dj02.jpg' alt='dj02'/>
+        <img class='postPic' src='./src/assets/games/djhero/dj03.jpg' alt='dj03'/>
+      </div>
+    `)
   },
   {
     id:'BandHero',
@@ -184,8 +197,10 @@ const exp = [
     title: 'Band Hero',
     position: 'Environment Artist',
     studio: 'Vicarious Visions',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    skillTags: ['Environment Art', 'Instrument', 'Port'],
+    description: (`
+      <strong><em>Band Hero</em></strong> was a short port project. After MUA2 a bunch of us piled on to help knock it out. I helped out with the instruments for he game mostly, utilizing my scripting knowledge to make the process faster and more efficient for myself and anyone else dealing with the instrument pipeline.
+    `)
   },
   {
     id:'MUA2',
@@ -193,8 +208,14 @@ const exp = [
     title: 'Marvel Ultimate Alliance 2',
     position: 'Environment Artist',
     studio: 'Vicarious Visions',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    skillTags: ['Environment Art', 'Destruction', 'Props', 'Skybox'],
+    description: (`
+      <strong><em>Marvel Ultimate Alliance 2</em></strong> or <em>MUA2</em> was the first project that I worked on at VV. It was a fun project full of a really cool cast of characters, I mean who wouldn't want to work on a Marvel game ;).
+      </br></br>
+      I worked on a mix of props, environments, destruction and skyboxes. Really anything that needed something done. We made a helicopter crash in one level which as soon as we finished it the desire to have helicopter crashes in every other level popped up. The running joke was to see when we would be putting in another crash lol.
+      </br></br>
+      This project was a great extension and utilization of the skills and experience I had working on Hulk.
+    `)
   },
   {
     id:'Hulk',
@@ -202,9 +223,17 @@ const exp = [
     title: 'The Incredible Hulk',
     position: 'Environment Artist',
     studio: 'Edge of Reality',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
+    skillTags: ['Environment Art','Props','Modular Assets', 'Destruction', 'Mel Script'],
+    description: (`
+      <strong><em>Hulk</em></strong> was my first game ever! It was a great learning experience and had a lot of great industry vets to learn from.
+      </br></br>
+      I started working on props and then shifted over to creating destruction assets. I wrote some Mel scripts to help with the setup for the rigid bodies but the asset break up was all by hand, these were the days before Houdini and procedural pipelines, so the destruction pipeline was a destructive one.
+      </br></br>
+      When I wasn't working on destruction I was helping build storefronts. Hulk was set in Manhatten so there was no shortage of storefronts to create. The team had gone to NYC and collected tons of great reference and we tried our best to be pretty true to the neighborhoods and general layout of the iconic Island. We even created specific landmarks such as Rockefellar center and Time Square which really helped ground the game in some sense of reality.
+      </br></br>
+      We did a lot on Hulk but we also crunched a lot to get it all done. All in all though it was a fun project with a lot of great people working on it.
+    `)
+  }
 
 ];
 

@@ -53,7 +53,7 @@ class App{
           callback: () => this.setState.bind(this, '/exp')
         },
         {
-          name:'Hire Me',
+          name:'Contact',
           id:'nav_contact',
           callback: () => this.setState.bind(this, '/contact')
         }

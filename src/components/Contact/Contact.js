@@ -4,14 +4,16 @@ const { validateEmail, validateFields } = require('../../utils');
 
 class Contact extends Component {
   constructor(){
-    super('div');
-    this.component.classList.add('contactContainer');
+    super('div', {class:'contactContainer'});
+    document.getElementById('Root').classList.add('dark');
+    // document.getElementById('Root').classList.remove('dark');
+
     const submitbtn = new Component('button');
     submitbtn.component.classList.add('contactSubmit');
-    document.getElementById('Root').classList.remove('dark');
     submitbtn.component.id = 'submitbtn';
     submitbtn.component.innerText = 'Submit';
     submitbtn.component.onclick = (event) =>{
+
       const email = document.getElementById('email').value;
       const name = document.getElementById('contactName').value;
       const type = document.getElementById('contactType').value;
@@ -65,13 +67,13 @@ class Contact extends Component {
         <input class="contactInput" id="email" type="email" required/>
         <div class="contactValidError" id="emailValidation" for="email"></div>
         </br>
-        <div class="contactLabels" for="contactType">Reason to get in touch</div>
+        <div class="contactLabels" for="contactType">Topic</div>
         <div class="wrapper">
           <select id="contactType" class="contactDropdown">
-            <option value="jobgames">Hire me for Games</option>
-            <option value="jobweb">Hire me for Web</option>
-            <option value="jobconsult">Hire for consultations</option>
-            <option value="collab">Collaborate on personal project</option>
+            <option value="jobgames">Game Gig</option>
+            <option value="jobweb">Web Work</option>
+            <option value="jobconsult">Consulting</option>
+            <option value="collab">Collaboration</option>
           </select>
         </div>
         </br>

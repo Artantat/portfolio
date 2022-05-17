@@ -28,10 +28,64 @@ class About extends Component{
             Hi! Thanks for dropping by!
           </p>
           <p>
-            I've been a Game Developer for ${expTimeYears}y ${expTimeMonths}m ${expTimeDaysRemaining}d working at 3 studios in that time. It's been a great pleasure working in this industry full of so many talented people and amazing teams.
+            I absolutely LOVE making video games! I've been a Game Developer for ${expTimeYears}y ${expTimeMonths}m ${expTimeDaysRemaining}d working at 3 studios in that time. It's been a great pleasure working in this industry full of so many talented people and amazing teams. Something that I've really enjoyed in my time as a developer, is that every project I've worked on has had such a unique set of problems to solve. I've probably worked in as many engines as projects i've been apart of. It's a blast to experiment and collaborate on the quest for the best experience for the players.
           </p>
           <p>
-            When I'm not working on making games, I spend most of my time learning new skills through a variety of resources such as Udemy, Linkedin Learn and tranditional classes. check out my learning section for resources i've found useful as well as tutorials and resources I've created.
+            Super Metroid is hands down my favorite game. I love the whole metroidvania genre, it hits the sweet spot of exploration, platformning and theme. Samus is a badass and the metroid series really captured my imagination. While it came out nearly 30 years ago it still holds up, heck I want to play it just writing about it. It really comes down the purity of the experience for me. You can spend less than a couple of hours playing if you are speed running or as much as 10 if you are just exploring but the true magic is that it is incredibly replayable. I can't tell you how many times I've beaten this game but ever time it's just as good as the first. It's amazingly captivating both visually and mechanically. It's straightforward yet always bettering yourself or solving problems with new mechanics. All in all I'd love to work on a presonal project as an homage to this great title.
+          </p>
+          <p>
+            Great communication, process and clear direction are essential for a good development cycle. Having a collaborative team with a solid vision is a powerful thing. I've had the pleasure of working on a few titles that were a perfect mix of small team dynamics, having great trust and respect for one another which added to a highly collaborative atmosphere. Everyone was excited and had fun making the game. It was one of the best experiences in my career. One thing that I enjoy about game jams and rapid devlopment is that you don't have time to be indecisive. That's not to say that decisions should be made carelessly or without proper investigation but more that you don't want to feel like you are a flag blowing in a tornado. Having a strong vision and developing great process around that vision can really give you a leg up when you hit full production. If preproduction is utilized properly the team should be coming into production knowing exactly what is being made and how it's going to be made. It's one of the reason that I focus on making sure I am organized, plan and document as much as possible.
+          </p>
+          <p>
+            Aside from games I love learning. Even at my busiest I always find time to continue my development. I typically use platforms such as Udemy or CG circuit but also go through tutorials anywhere i can find them. I enjoy series like that of Udemy because they are split into bite size chunks which allow me to get through even the longest courses a little bit at a time. It's amazing what you can achieve even just focusing an hour every few days on. I've taken courses for all manner of things including blockchain development, python, c++, web development (created this site after that one), Houdini, leadership, communication and whatever peaks my interest. That's not even including the skills development I do in my day to day work making games. Learning is a passion of mine and I will be doing it until the day I die.
+          </p>
+          <p>
+            Here is a quick break down of my skills and experience. Check out the experience tab for more indepth detail on projects and work I've done.
+          </p>
+          <strong>Development Software</strong>
+          <hr>
+          <p class='bioSkills'>
+            <strong>Game Engines:</strong> Unity, Unreal 4, and about a dozen proprietary engines
+            </br>
+            <strong>Content Software:</strong> Photoshop, Illustrator, AfterFX, Substance Designer, Substance Painter, 3dsmax, Maya, Blender, Houdini, Unreal, Z-Brush
+            </br>
+            <strong>Production Software:</strong> Jira, Confluence, Perfoce, Git, DevTrack, Excel/Sheets, Power point, OBS
+            </br>
+            <strong>Programming:</strong> Javascript(including NodeJS & React), C++, C#, Python
+          </p>
+          <strong>Skills & Expertise</strong>
+          <hr>
+          <p class='bioSkills'>
+            <strong>Leadership:</strong> Career Management, Career Goal Development, Mentorship & Coaching, Scope & Task Planning, Roadmapping
+            </br>
+            <strong>Communication:</strong> Modern Remote Practices, Zoom, Slack, Miro, Robust Documentation
+            </br>
+            <strong>Pipelines:</strong> Material & Shader Development, VFX, Static Destruction, Simulated Destruction, Environment Art, Rapid Prototyping, Functional Focused Development, Proceduralization, Modular Design, Feature Development, Workflow Improvement & Modernization
+          </p>
+          <strong>Work History</strong>
+          <hr>
+          <p class='bioSkills'>
+            <strong>Bioware</strong> | Sept 2020 - Present
+            </br>
+            <strong>Vicarious Visions</strong> | Sept 2008 - Sept 2020
+            </br>
+            <strong>Edge of Reality</strong> | Mar 2007 - Sept 2008
+          </p>
+          <strong>Training & Development</strong>
+          <hr>
+          <p class='bioSkills'>
+            <strong>Management & Leadership:</strong> Crucial Conversations, Active Listening, Digital Body Language, Management L1, Building Inclusive teams, Various Internal Training Modules
+            </br>
+            <strong>Skills Developement:</strong> C++ From beginner to beyond, Complete webdev: zero to mastery, Etherium & smart contracts from scratch, Blockchain & Crypto currancy: Python & React
+          </p>
+          <strong>Education</strong>
+          <hr>
+          <p class='bioSkills'>
+            <strong>Bachelor's Computer Science: Game Art & Design</strong> | Art Institute: San Diego, CA
+          <p class='bioSign'>
+            Regards,
+          </br>
+            William Castagna
           </p>
         </div>
       </div>
@@ -99,7 +153,7 @@ class App{
           callback: () => this.setState.bind(this, '/exp')
         },
         {
-          name:'Hire Me',
+          name:'Contact',
           id:'nav_contact',
           callback: () => this.setState.bind(this, '/contact')
         }
@@ -190,14 +244,16 @@ const { validateEmail, validateFields } = require('../../utils');
 
 class Contact extends Component {
   constructor(){
-    super('div');
-    this.component.classList.add('contactContainer');
+    super('div', {class:'contactContainer'});
+    document.getElementById('Root').classList.add('dark');
+    // document.getElementById('Root').classList.remove('dark');
+
     const submitbtn = new Component('button');
     submitbtn.component.classList.add('contactSubmit');
-    document.getElementById('Root').classList.remove('dark');
     submitbtn.component.id = 'submitbtn';
     submitbtn.component.innerText = 'Submit';
     submitbtn.component.onclick = (event) =>{
+
       const email = document.getElementById('email').value;
       const name = document.getElementById('contactName').value;
       const type = document.getElementById('contactType').value;
@@ -251,13 +307,13 @@ class Contact extends Component {
         <input class="contactInput" id="email" type="email" required/>
         <div class="contactValidError" id="emailValidation" for="email"></div>
         </br>
-        <div class="contactLabels" for="contactType">Reason to get in touch</div>
+        <div class="contactLabels" for="contactType">Topic</div>
         <div class="wrapper">
           <select id="contactType" class="contactDropdown">
-            <option value="jobgames">Hire me for Games</option>
-            <option value="jobweb">Hire me for Web</option>
-            <option value="jobconsult">Hire for consultations</option>
-            <option value="collab">Collaborate on personal project</option>
+            <option value="jobgames">Game Gig</option>
+            <option value="jobweb">Web Work</option>
+            <option value="jobconsult">Consulting</option>
+            <option value="collab">Collaboration</option>
           </select>
         </div>
         </br>
@@ -305,10 +361,7 @@ class DemoReel extends Component {
     super('div');
     this.component.classList.add('demoReelContainer');
     this.component.innerHTML = (`
-      <video class="demoReelVideo" controls>
-        <source src="" type="video/mp4" alt="Demo Reel">
-      </video>
-
+      <iframe class='demoReelVideo' src="https://www.youtube.com/embed/WbH-3z306Bs?&hd=1" title="Demo Reel 2020" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `);
     document.getElementById('Root').classList.add('dark');
   }
@@ -470,7 +523,9 @@ const exp = [
     description: (`
       I was only on <strong><em>Black Armory</em></strong> for a short while as i was finishing up the previous release and then jumped on pre-vis for Penumbra before coming back and helping close out this release.
       </br></br>
-      My focus was mainly weapons, secrets and reticles to help with the hidden secret mechanics.
+      My focus was mainly weapons, secrets and reticles to help with the hidden secret mechanics. This included setup for the reticles as well as shader work to work properly. There were a lot of weapons to go through so as soon as i was done with one I was on to another!
+      </br></br>
+      Working with Bungie was a really interesting experience coming from VV where there is so much overlap in influence and responsibility. Bungie on the other hand was a team of specialists with an area of focus and expertise like a well oiled machine. One draw back of this model though is that knowledge can become tribal and then potentially lost if a member leaves and hasn't documented it well. On the other hand it is incredibly difficult to know anything about everything all the time. These projects really reinforced my methodology around robust and clear documentation.
     `)
   },
   {
@@ -483,7 +538,7 @@ const exp = [
     description: (`
       <strong><em>War Mind</em></strong> was an awesome release to work on. I had the pleasure of doing all of the FX for the wurm god Xol which was a badass worm looking monster. While working on Xol I crafted ambient ash fx and prototyped some interesting pealing skin fx.
       </br></br>
-      It was really awesome working with Bungie, we were able to visit their studio and do some in person training for a few weeks before bringing it back to the rest of the team to ramp up on. Their tools were powerful and it was fun to dive into the shader system which drove the particle system. The VFX team at Bungie was really awesome to work with, both collaborative and imaginative.
+      It was really awesome working with Bungie, we were able to visit their studio and do some in person training for a few weeks before bringing it back to the rest of the team to ramp up on. Their tools were powerful and it was fun to dive into the shader system which drove the particle system. The VFX team at Bungie was really awesome to work with, both collaborative and imaginative. Through the training of our team at VV I created a good amount of detailed documentation to help us transition into the Bungie toolset and hit the ground running.
       </br></br>
       The engine was well optimized and powerful. We were able to create a lot of really awesome FX and materials. Their engine was one of the better ones that i've worked with albiet a bit cumbersome at times.
     `)
@@ -575,8 +630,19 @@ const exp = [
     title: 'DJ Hero 3ds',
     position: 'Environment Artist',
     studio: 'Vicarious Visions',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    skillTags: ['Environment Art', 'VFX'],
+    description: (`
+      DJ was a cool project to work on. Unfortunately it was cancelled before release but we showed the game at E3 along with other launch titles for the Nintendo 3ds. To be honest I liked playing this handheld version more than the base game. It just felt natural and really good to play.
+      </br></br>
+      The Environments themselves were interesting as well, experimenting with a graphitti like style. I worked on environments primarily as well as the lightshows for the environments.
+      </br></br>
+      There isn't a lot out there showing what we made but here are a couple screenshots!
+      <div class='postImages'>
+        <img class='postPic' src='./src/assets/games/djhero/dj01.jpg' alt='dj01'/>
+        <img class='postPic' src='./src/assets/games/djhero/dj02.jpg' alt='dj02'/>
+        <img class='postPic' src='./src/assets/games/djhero/dj03.jpg' alt='dj03'/>
+      </div>
+    `)
   },
   {
     id:'BandHero',
@@ -584,8 +650,10 @@ const exp = [
     title: 'Band Hero',
     position: 'Environment Artist',
     studio: 'Vicarious Visions',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    skillTags: ['Environment Art', 'Instrument', 'Port'],
+    description: (`
+      <strong><em>Band Hero</em></strong> was a short port project. After MUA2 a bunch of us piled on to help knock it out. I helped out with the instruments for he game mostly, utilizing my scripting knowledge to make the process faster and more efficient for myself and anyone else dealing with the instrument pipeline.
+    `)
   },
   {
     id:'MUA2',
@@ -593,8 +661,14 @@ const exp = [
     title: 'Marvel Ultimate Alliance 2',
     position: 'Environment Artist',
     studio: 'Vicarious Visions',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    skillTags: ['Environment Art', 'Destruction', 'Props', 'Skybox'],
+    description: (`
+      <strong><em>Marvel Ultimate Alliance 2</em></strong> or <em>MUA2</em> was the first project that I worked on at VV. It was a fun project full of a really cool cast of characters, I mean who wouldn't want to work on a Marvel game ;).
+      </br></br>
+      I worked on a mix of props, environments, destruction and skyboxes. Really anything that needed something done. We made a helicopter crash in one level which as soon as we finished it the desire to have helicopter crashes in every other level popped up. The running joke was to see when we would be putting in another crash lol.
+      </br></br>
+      This project was a great extension and utilization of the skills and experience I had working on Hulk.
+    `)
   },
   {
     id:'Hulk',
@@ -602,9 +676,17 @@ const exp = [
     title: 'The Incredible Hulk',
     position: 'Environment Artist',
     studio: 'Edge of Reality',
-    skillTags: ['VFX','Shader FX','Character FX'],
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
+    skillTags: ['Environment Art','Props','Modular Assets', 'Destruction', 'Mel Script'],
+    description: (`
+      <strong><em>Hulk</em></strong> was my first game ever! It was a great learning experience and had a lot of great industry vets to learn from.
+      </br></br>
+      I started working on props and then shifted over to creating destruction assets. I wrote some Mel scripts to help with the setup for the rigid bodies but the asset break up was all by hand, these were the days before Houdini and procedural pipelines, so the destruction pipeline was a destructive one.
+      </br></br>
+      When I wasn't working on destruction I was helping build storefronts. Hulk was set in Manhatten so there was no shortage of storefronts to create. The team had gone to NYC and collected tons of great reference and we tried our best to be pretty true to the neighborhoods and general layout of the iconic Island. We even created specific landmarks such as Rockefellar center and Time Square which really helped ground the game in some sense of reality.
+      </br></br>
+      We did a lot on Hulk but we also crunched a lot to get it all done. All in all though it was a fun project with a lot of great people working on it.
+    `)
+  }
 
 ];
 
