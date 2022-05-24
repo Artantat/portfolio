@@ -76,7 +76,7 @@ class About extends Component{
           <p class='bioSkills'>
             <strong>Management & Leadership:</strong> Crucial Conversations, Active Listening, Digital Body Language, Management L1, Building Inclusive teams, Various Internal Training Modules
             </br>
-            <strong>Skills Developement:</strong> C++ From beginner to beyond, Complete webdev: zero to mastery, Etherium & smart contracts from scratch, Blockchain & Crypto currancy: Python & React
+            <strong>Skills Developement:</strong> C++ From beginner to beyond, Complete webdev: zero to mastery, Etherium & smart contracts from scratch, Blockchain & Crypto currancy: Python & React, How to Program Games: Tile Classics in JS for HTML5 Canvas
           </p>
           <strong>Education</strong>
           <hr>
