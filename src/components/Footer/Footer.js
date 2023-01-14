@@ -11,21 +11,21 @@ const footerIcons = [
     src: './src/assets/icons/linkedin_icon.png',
     link: 'https://www.linkedin.com/in/wcastagna/'
   },
-  {
-    name: 'OpenSea',
-    src: './src/assets/icons/opensea_icon.svg',
-    link: 'https://opensea.io/Artantat'
-  },
-  {
-    name: 'Redbubble',
-    src: './src/assets/icons/redbubble_icon.png',
-    link: 'https://www.redbubble.com/people/Artantat/shop'
-  },
-  {
-    name: 'Twitter',
-    src: './src/assets/icons/twitter_icon.png',
-    link: 'https://twitter.com/Artantat'
-  }
+  // {
+  //   name: 'OpenSea',
+  //   src: './src/assets/icons/opensea_icon.svg',
+  //   link: 'https://opensea.io/Artantat'
+  // },
+  // {
+  //   name: 'Redbubble',
+  //   src: './src/assets/icons/redbubble_icon.png',
+  //   link: 'https://www.redbubble.com/people/Artantat/shop'
+  // },
+  // {
+  //   name: 'Twitter',
+  //   src: './src/assets/icons/twitter_icon.png',
+  //   link: 'https://twitter.com/Artantat'
+  // }
 ];
 
 const getFooterIcons = () =>{

@@ -24,33 +24,33 @@ class About extends Component{
         <div id='descriptionBox' class='descriptionBox'>
         <img src="${pic}" alt="Picture" class="profilePic"/>
           <p>
-            Hi! Thanks for dropping by!
+            Hi, thanks for dropping by!
           </p>
           <p>
-            I absolutely LOVE making video games! I've been a Game Developer for ${expTimeYears}y ${expTimeMonths}m ${expTimeDaysRemaining}d working at 3 studios in that time. It's been a great pleasure working in this industry full of so many talented people and amazing teams. Something that I've really enjoyed in my time as a developer, is that every project I've worked on has had such a unique set of problems to solve. I've probably worked in as many engines as projects i've been apart of. It's a blast to experiment and collaborate on the quest for the best experience for the players.
+            I absolutely love making games! I've been a Game Developer for ${expTimeYears} years ${expTimeMonths} months and ${expTimeDaysRemaining} days. In my career I've worked at three studios, I cherish the time at each. It's been awesome working with so many talented people while working on such a diverse and extraordinary set of projects. Each project has had their own challenges and triumphs but all have made me better for it.
           </p>
           <p>
-            Super Metroid is hands down my favorite game. I love the whole metroidvania genre, it hits the sweet spot of exploration, platformning and theme. Samus is a badass and the metroid series really captured my imagination. While it came out nearly 30 years ago it still holds up, heck I want to play it just writing about it. It really comes down the purity of the experience for me. You can spend less than a couple of hours playing if you are speed running or as much as 10 if you are just exploring but the true magic is that it is incredibly replayable. I can't tell you how many times I've beaten this game but ever time it's just as good as the first. It's amazingly captivating both visually and mechanically. It's straightforward yet always bettering yourself or solving problems with new mechanics. All in all I'd love to work on a presonal project as an homage to this great title.
+            I believe that clear direction and great communication are the cornerstones of successful developement. When you have a collaborative team with a solid vision it is an unstoppable force. Luckily, both collaborative culture and strong vision are within our power as leaders to create and cultivate.
           </p>
           <p>
-            Great communication, process and clear direction are essential for a good development cycle. Having a collaborative team with a solid vision is a powerful thing. I've had the pleasure of working on a few titles that were a perfect mix of small team dynamics, having great trust and respect for one another which added to a highly collaborative atmosphere. Everyone was excited and had fun making the game. It was one of the best experiences in my career. One thing that I enjoy about game jams and rapid devlopment is that you don't have time to be indecisive. That's not to say that decisions should be made carelessly or without proper investigation but more that you don't want to feel like you are a flag blowing in a tornado. Having a strong vision and developing great process around that vision can really give you a leg up when you hit full production. If preproduction is utilized properly the team should be coming into production knowing exactly what is being made and how it's going to be made. It's one of the reason that I focus on making sure I am organized, plan and document as much as possible.
+            I love learning, whether or not it's game related. Even at my busiest I always find time to continue my development. I typically try to do some manner of training for an hour or so a few times a week, keeping the commitment relatively small and managable while chipping away at a larger goal or skill improvment. Learning and development are passions of mine, not only for myself but also to teach and share the expertise and knowledge I've aquired.
           </p>
           <p>
-            Aside from games I love learning. Even at my busiest I always find time to continue my development. I typically use platforms such as Udemy or CG circuit but also go through tutorials anywhere i can find them. I enjoy series like that of Udemy because they are split into bite size chunks which allow me to get through even the longest courses a little bit at a time. It's amazing what you can achieve even just focusing an hour every few days on. I've taken courses for all manner of things including blockchain development, python, c++, web development (created this site after that one), Houdini, leadership, communication and whatever peaks my interest. That's not even including the skills development I do in my day to day work making games. Learning is a passion of mine and I will be doing it until the day I die.
-          </p>
-          <p>
-            Here is a quick break down of my skills and experience. Check out the experience tab for more indepth detail on projects and work I've done.
+            Here is a quick breakdown of my skills and experience:
+            </br>
           </p>
           <strong>Development Software</strong>
           <hr>
           <p class='bioSkills'>
-            <strong>Game Engines:</strong> Unity, Unreal 4, and about a dozen proprietary engines
+            <strong>Game Engines:</strong> Unreal 4, and about a dozen proprietary engines
             </br>
-            <strong>Content Software:</strong> Photoshop, Illustrator, AfterFX, Substance Designer, Substance Painter, 3dsmax, Maya, Blender, Houdini, Unreal, Z-Brush
+            <strong>Content Software:</strong> Substance Designer, 3dsmax, Maya, Houdini, Unreal, Z-Brush, Photoshop, Illustrator, AfterFX
             </br>
-            <strong>Production Software:</strong> Jira, Confluence, Perfoce, Git, DevTrack, Excel/Sheets, Power point, OBS
+            <strong>Production Software:</strong> Jira, Confluence, Perforce, Git, DevTrack, Excel/Sheets, Power point
             </br>
-            <strong>Programming:</strong> Javascript(including NodeJS & React), C++, C#, Python
+            <strong>Programming:</strong> Javascript(including NodeJS & React), Python, dabbled in C# & C++
+            </br>
+            <strong>Active Training:</strong> Blender, Unreal 5, Embergen
           </p>
           <strong>Skills & Expertise</strong>
           <hr>
@@ -61,6 +61,27 @@ class About extends Component{
             </br>
             <strong>Pipelines:</strong> Material & Shader Development, VFX, Static Destruction, Simulated Destruction, Environment Art, Rapid Prototyping, Functional Focused Development, Proceduralization, Modular Design, Feature Development, Workflow Improvement & Modernization
           </p>
+          <strong>Game Credits</strong>
+          <hr>
+            <p class='bioSkills'>
+              Star Wars: The Old Republic (PC) - Showdown on Ruhnuk (7.2)</br>
+              Star Wars: The Old Republic (PC) - Digging Deeper (7.1)</br>
+              Star Wars: The Old Republic (PC) - Legacy of the Sith (7.0)</br>
+              Star Wars: The Old Republic (PC) - Secrets of the Enclave (6.3)</br>
+              Star Wars: The Old Republic (PC) - Spirit of Vengeance (6.2)</br>
+              Tony Hawk Pro Skater 1+ 2 remaster (Console)</br>
+              Destiny 2: Black Armory (Console)</br>
+              Destiny 2: Warmind (Console)</br>
+              Skylanders: Imaginators (Crash Action Pack) (Xbone, Ps4)</br>
+              Skylanders: Superchargers (Xbone,Ps4,PS3,Xb360, WiiU, iOS)</br>
+              Skylanders: Trap Team (Tablet)</br>
+              Skylanders: Lost Islands (Mobile, Main Development and LiveOps.)</br>
+              Skylanders: Spyro's Adventure (Nintendo 3ds)</br>
+              DJ Hero 3DS (Nintendo 3ds)(Announced and shown at E3, not released)</br>
+              Band Hero (Console)</br>
+              Marvel Ultimate Alliance 2 (Console)</br>
+              The Incredible Hulk (Console)</br>
+            </p>
           <strong>Work History</strong>
           <hr>
           <p class='bioSkills'>
@@ -69,13 +90,6 @@ class About extends Component{
             <strong>Vicarious Visions</strong> | Sept 2008 - Sept 2020
             </br>
             <strong>Edge of Reality</strong> | Mar 2007 - Sept 2008
-          </p>
-          <strong>Training & Development</strong>
-          <hr>
-          <p class='bioSkills'>
-            <strong>Management & Leadership:</strong> Crucial Conversations, Active Listening, Digital Body Language, Management L1, Building Inclusive teams, Various Internal Training Modules
-            </br>
-            <strong>Skills Developement:</strong> C++ From beginner to beyond, Complete webdev: zero to mastery, Etherium & smart contracts from scratch, Blockchain & Crypto currancy: Python & React, How to Program Games: Tile Classics in JS for HTML5 Canvas
           </p>
           <strong>Education</strong>
           <hr>

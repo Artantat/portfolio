@@ -11,7 +11,6 @@ class Header extends Component {
         <img src="${pic}" alt="Picture" class="logo"/>
         <div>
           <div class='headerName'>${name}</div>
-          <div class='headerPos'>VFX, Creative, & Code</div>
         </div>
       </div>
     `);

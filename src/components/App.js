@@ -46,17 +46,17 @@ class App{
           name:'Bio',
           id:'nav_bio',
           callback: () => this.setState.bind(this, '/bio')
-        },
-        {
-          name:'Experience',
-          id:'nav_exp',
-          callback: () => this.setState.bind(this, '/exp')
-        },
-        {
-          name:'Contact',
-          id:'nav_contact',
-          callback: () => this.setState.bind(this, '/contact')
         }
+        // {
+        //   name:'Experience',
+        //   id:'nav_exp',
+        //   callback: () => this.setState.bind(this, '/exp')
+        // },
+        // {
+        //   name:'Contact',
+        //   id:'nav_contact',
+        //   callback: () => this.setState.bind(this, '/contact')
+        // }
       ])).component);
     // root.appendChild(new NavBar(['About','Games','Personal Projects','Contact']).component);
     switch (this.state.url) {
