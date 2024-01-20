@@ -28,65 +28,116 @@ class About extends Component{
             Hi, thanks for dropping by!
           </p>
           <p>
-            I absolutely love making games! I've been a Game Developer for ${expTimeYears} years ${expTimeMonths} months and ${expTimeDaysRemaining} days. In my career I've worked at three studios, I cherish the time at each. It's been awesome working with so many talented people while working on such a diverse and extraordinary set of projects. Each project has had their own challenges and triumphs but all have made me better for it.
+            I've been a Game Developer for ${expTimeYears} years ${expTimeMonths} months. In that time I've had the pleasure of working with so many talented developers across a wide variety of projects, spanning a multitude of styles and genres. Each has had it's own set of challenges and triumphs, all of which contribute to becoming a better developer. My passion continues to grow with each challenge that has crossed my path.
           </p>
           <p>
-            I believe that clear direction and great communication are the cornerstones of successful developement. When you have a collaborative team with a solid vision it is an unstoppable force. Luckily, both collaborative culture and strong vision are within our power as leaders to create and cultivate.
+            As a leader I work to cultivate a culture of collaboration and empowerment. I believe that strong communication is key to success at every level, which is why I focus on improving these skills with my team. It's important to me that my team feels empowered to own their work. I strive to be an effective guide in their professional development. There may be hard challenges or unclear paths but we will get there together.
           </p>
           <p>
-            I love learning, whether or not it's game related. Even at my busiest I always find time to continue my development. I typically try to do some manner of training for an hour or so a few times a week, keeping the commitment relatively small and managable while chipping away at a larger goal or skill improvment. Learning and development are passions of mine, not only for myself but also to teach and share the expertise and knowledge I've aquired.
-          </p>
-          <p>
-            Here is a quick breakdown of my skills and experience:
-            </br>
+            Besides making games, my other great passion is personal/professional growth. I love learning new software, practices, processes and workflows. I really enjoy reverse engineering systems and pipelines as well. I am up for any challenge big, small or seemingly impossible. I'm ready to give it a shot.
           </p>
           <strong>Development Software</strong>
           <hr>
           <p class='bioSkills'>
             <strong>Game Engines:</strong> Unreal 4, and about a dozen proprietary engines
             </br>
-            <strong>Content Software:</strong> Substance Designer, 3dsmax, Maya, Houdini, Unreal, Z-Brush, Photoshop, Illustrator, AfterFX
+            <strong>Content Software:</strong> Maya, Unreal, Houdini, 3dsmax, Substance Designer, Photoshop
             </br>
-            <strong>Production Software:</strong> Jira, Confluence, Perforce, Git, DevTrack, Excel/Sheets, Power point
+            <strong>Production Software:</strong> Jira, Confluence, Perforce, Git, DevTrack, Excel/Sheets
             </br>
-            <strong>Programming:</strong> Javascript(including NodeJS & React), Python, dabbled in C# & C++
-            </br>
-            <strong>Active Training:</strong> Blender, Unreal 5, Embergen
+            <strong>Programming:</strong> Python, C#, Javascript(including NodeJS & React)
           </p>
           <strong>Skills & Expertise</strong>
           <hr>
+          <p class='bioSkillsTitle'>
+            <strong>Leadership:</strong>
+          </p>
           <p class='bioSkills'>
-            <strong>Leadership:</strong> Career Management, Career Goal Development, Mentorship & Coaching, Scope & Task Planning, Roadmapping
-            </br>
-            <strong>Communication:</strong> Modern Remote Practices, Zoom, Slack, Miro, Robust Documentation
-            </br>
-            <strong>Pipelines:</strong> Material & Shader Development, VFX, Static Destruction, Simulated Destruction, Environment Art, Rapid Prototyping, Functional Focused Development, Proceduralization, Modular Design, Feature Development, Workflow Improvement & Modernization
+              Career Management 
+              </br>Career Goal Development
+              </br>Mentorship & Coaching
+              </br>Scope & Task Planning
+              </br>Roadmapping
+          </p>
+          <p class='bioSkillsTitle'>
+            <strong>VFX:</strong> 
+          </p>
+          <p class='bioSkills'>
+            Particle systems
+            </br>Shader FX
+            </br>Abilities
+            </br>Ambient
+            </br>Skyboxes
+            </br>In Game Cinematic FX
+          </p>
+          <p class='bioSkillsTitle'>
+            <strong>Technical:</strong> 
+          </p>
+          <p class='bioSkills'>
+            Python
+            </br>C#
+            </br>MaxScript (<em>As needed</em>)
+            </br>Vex (<em>As needed</em>)
+          </p>
+          <p class='bioSkillsTitle'>
+            <strong>Communication:</strong> 
+          </p>
+          <p class='bioSkills'>
+            Modern Remote Practices
+            </br>Zoom
+            </br>Slack
+            </br>Miro
+            </br>Robust Documentation(<em>Including Documentation of systems, tools and pipelines that have lost knowledge</em>)
+          </p>
+          <p class='bioSkillsTitle'>
+            <strong>Pipeline & Workflow:</strong>
+          </p>
+          <p class='bioSkills'>
+            Material & Shader Development 
+            </br>Static Destruction (Houdini/Houdini Engine)
+            </br>Simulated Destruction (Houdini => Unreal 4)
+            </br>Rapid Prototyping
+            </br>Functional Focused Development
+            </br>Proceduralization
+            </br>Modular Design
+            </br>Workflow Improvement & Modernization
+            </br>Art Content Tools (<em>Focused on Improving Efficiency</em>)
+          </p>
+          <p class='bioSkillsTitle'>
+            <strong>Misc:</strong>
+          </p> 
+          <p class='bioSkills'>
+            Workflow Archaeology (<em>Learning, Documenting and Teaching of workflows, systems and pipelines where knowledge had been lost or forgotten.</em>)
           </p>
           <strong>Game Credits</strong>
           <hr>
             <p class='bioSkills'>
-              Star Wars: The Old Republic (PC) - Showdown on Ruhnuk (7.2)</br>
-              Star Wars: The Old Republic (PC) - Digging Deeper (7.1)</br>
-              Star Wars: The Old Republic (PC) - Legacy of the Sith (7.0)</br>
-              Star Wars: The Old Republic (PC) - Secrets of the Enclave (6.3)</br>
-              Star Wars: The Old Republic (PC) - Spirit of Vengeance (6.2)</br>
-              Tony Hawk Pro Skater 1+ 2 remaster (Console)</br>
-              Destiny 2: Black Armory (Console)</br>
-              Destiny 2: Warmind (Console)</br>
-              Skylanders: Imaginators (Crash Action Pack) (Xbone, Ps4)</br>
-              Skylanders: Superchargers (Xbone,Ps4,PS3,Xb360, WiiU, iOS)</br>
-              Skylanders: Trap Team (Tablet)</br>
-              Skylanders: Lost Islands (Mobile, Main Development and LiveOps.)</br>
-              Skylanders: Spyro's Adventure (Nintendo 3ds)</br>
-              DJ Hero 3DS (Nintendo 3ds)(Announced and shown at E3, not released)</br>
-              Band Hero (Console)</br>
-              Marvel Ultimate Alliance 2 (Console)</br>
-              The Incredible Hulk (Console)</br>
+              Star Wars: The Old Republic (PC) - Chains in the Dark (7.4)     | <strong>Lead VFX & Animation</strong></br>
+              Star Wars: The Old Republic (PC) - Old Wounds (7.3)             | <strong>Lead VFX & Animation</strong></br>
+              Star Wars: The Old Republic (PC) - Showdown on Ruhnuk (7.2)     | <strong>Lead VFX & Animation</strong></br>
+              Star Wars: The Old Republic (PC) - Digging Deeper (7.1)         | <strong>Lead VFX & Animation</strong></br>
+              Star Wars: The Old Republic (PC) - Legacy of the Sith (7.0)     | <strong>Lead VFX Artist</strong></br>
+              Star Wars: The Old Republic (PC) - Secrets of the Enclave (6.3) | <strong>Senior VFX Artist</strong></br>
+              Star Wars: The Old Republic (PC) - Spirit of Vengeance (6.2)    | <strong>Senior VFX Artist</strong></br>
+              Tony Hawk Pro Skater 1+ 2 remaster (Console)                    | <strong>Senior VFX & Destruction</strong></br>
+              Destiny 2: Black Armory (Console)                               | <strong>Senior VFX</strong></br>
+              Destiny 2: Warmind (Console)                                    | <strong>Senior VFX</strong></br>
+              Skylanders: Imaginators (Crash Action Pack) (Xbone, Ps4)        | <strong>Senior VFX</strong></br>
+              Skylanders: Superchargers (Xbone,Ps4,PS3,Xb360, WiiU, iOS)      | <strong>Senior VFX</strong></br>
+              Skylanders: Trap Team (Tablet Port)                             | <strong>Generalist / Solo Artist</strong></br>
+              Skylanders: Lost Islands (Mobile, Main Dev and LiveOps.)        | <strong>Generalist, Lead & Solo Artist</strong>(<em>End of Product Life Cycle</em>) </br>
+              Skylanders: Spyro's Adventure (Nintendo 3ds)                    | <strong>Environments & Shader Work</strong></br>
+              DJ Hero 3DS (Nintendo 3ds)(Shown at E3, not released)           | <strong>Environments & VFX</strong></br>
+              Band Hero (Console)                                             | <strong>Environments & VFX</strong></br>
+              Marvel Ultimate Alliance 2 (Console)                            | <strong>Environments</strong></br>
+              The Incredible Hulk (Console)                                   | <strong>Environments</strong></br>
             </p>
           <strong>Work History</strong>
           <hr>
           <p class='bioSkills'>
-            <strong>Bioware</strong> | Sept 2020 - Present
+            <strong>Broadsword Online Games</strong> | July 2023 - Present
+            </br>
+            <strong>Bioware</strong> | Sept 2020 - July 2023
             </br>
             <strong>Vicarious Visions</strong> | Sept 2008 - Sept 2020
             </br>
@@ -123,12 +174,12 @@ const Contact = require('./Contact/Contact');
 class App{
   constructor(){
     this.state = {
-      url: '/work',
+      url: '/bio',
       validUrls: [
         '/bio',
-        '/exp',
-        '/work',
-        '/contact'
+        // '/exp',
+        // '/work',
+        // '/contact'
       ]
     };
   }
@@ -151,11 +202,11 @@ class App{
       './src/assets/profile/profile.jpeg',
       'William Castagna',
       new NavBar([
-        {
-          name:'Work',
-          id:'nav_work',
-          callback: () => this.setState.bind(this, '/work')
-        },
+        // {
+        //   name:'Work',
+        //   id:'nav_work',
+        //   callback: () => this.setState.bind(this, '/work')
+        // },
         {
           name:'Bio',
           id:'nav_bio',
@@ -178,18 +229,18 @@ class App{
         document.getElementById('nav_bio').classList.add('activeNavBarItem');
         root.appendChild(new About().component);
         break;
-      case '/exp':
-        document.getElementById('nav_exp').classList.add('activeNavBarItem');
-        root.appendChild(new ProjectPanel('GAMES',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
-        break;
-      case '/work':
-        document.getElementById('nav_work').classList.add('activeNavBarItem');
-        root.appendChild(new DemoReel().component);
-        break;
-      case '/contact':
-        document.getElementById('nav_contact').classList.add('activeNavBarItem');
-        root.appendChild(new Contact().component);
-        break;
+      // case '/exp':
+      //   document.getElementById('nav_exp').classList.add('activeNavBarItem');
+      //   root.appendChild(new ProjectPanel('GAMES',`Below you will find each game that I've worked on in my 15 years in the game industry.<br/><br/>Each entry is accompanied by some writings about the project`).component);
+      //   break;
+      // case '/work':
+      //   document.getElementById('nav_work').classList.add('activeNavBarItem');
+      //   root.appendChild(new DemoReel().component);
+      //   break;
+      // case '/contact':
+      //   document.getElementById('nav_contact').classList.add('activeNavBarItem');
+      //   root.appendChild(new Contact().component);
+      //   break;
       default:
         root.appendChild(new About().component);
     }
@@ -803,7 +854,7 @@ class Header extends Component {
     this.component.id = 'header';
     this.component.innerHTML = (`
       <div class="banner" id='banner'>
-        <img src="${pic}" alt="Picture" class="logo"/>
+        
         <div>
           <div class='headerName'>${name}</div>
         </div>
