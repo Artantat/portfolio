@@ -45,7 +45,7 @@ class About extends Component{
             </br>
             <strong>Production Software:</strong> Jira, Confluence, Perforce, Git, DevTrack, Excel/Sheets
             </br>
-            <strong>Programming:</strong> Python, C#, Javascript(including NodeJS & React)
+            <strong>Programming:</strong> Python, C#, Maxscript, Javascript, Vex
           </p>
           <strong>Skills & Expertise</strong>
           <hr>
@@ -65,8 +65,9 @@ class About extends Component{
           <p class='bioSkills'>
             Particle systems
             </br>Shader FX
-            </br>Abilities
-            </br>Ambient
+            </br>Abilities FX
+            </br>Ambient FX
+            </br>Character FX (Cosmetic & Ambients)
             </br>Skyboxes
             </br>In Game Cinematic FX
           </p>
@@ -74,10 +75,11 @@ class About extends Component{
             <strong>Technical:</strong> 
           </p>
           <p class='bioSkills'>
-            Python
-            </br>C#
-            </br>MaxScript (<em>As needed</em>)
-            </br>Vex (<em>As needed</em>)
+            Python (<em>As needed for project or pipeline / Hobby</em>)
+            </br>C# (<em>As needed for project or pipeline / Hobby</em>)
+            </br>MaxScript (<em>As needed for project or pipeline</em>)
+            </br>Vex (<em>As needed for project or pipeline</em>)
+            </br>Javascript (<em>Hobby</em>)
           </p>
           <p class='bioSkillsTitle'>
             <strong>Communication:</strong> 
@@ -93,8 +95,8 @@ class About extends Component{
             <strong>Pipeline & Workflow:</strong>
           </p>
           <p class='bioSkills'>
-            Material & Shader Development 
-            </br>Static Destruction (Houdini/Houdini Engine)
+            Material & Shader Development & Prototyping
+            </br>Static Destruction (Houdini/Houdini Engine, Max, Maya)
             </br>Simulated Destruction (Houdini => Unreal 4)
             </br>Rapid Prototyping
             </br>Functional Focused Development
